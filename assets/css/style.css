@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #212432;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;  */
+}
+
+header {
+    transition: background 0.3s, opacity 0.3s;
+}
+
+header.scrolled {
+    background: #1F1F1F;
+}
+
+header nav .nav-link:hover {
+    color: #CFBC76;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #FFC100;
+    border: none;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/hero-image-2.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #ffbf00b8;
+    color: #fff;
+    border: none;
+}
+
+.info-content .info-row {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.info-content .info-row img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.info-content .info-text {
+    padding: 1rem;
+}
+
+.info-content .info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-content .info-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.info-row h2 {
+    color: #efdfba;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info-row p {
+    color: white;
+}
+
+.sidebar .nav-link:hover {
+    background: #CFBC76;
+    border-radius: 4px;
+}
