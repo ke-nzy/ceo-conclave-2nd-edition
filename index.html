@@ -10,12 +10,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="">
     <header class="text-white fixed-top">
         <div class="container d-flex justify-content-between align-items-center py-3">
             <div class="logo">
@@ -55,10 +58,10 @@
         <a href="/products" class="btn btn-primary">View products</a>
     </div>
 
-    <section class="container my-5">
+    <section class="container my-5 mb-2">
 
         <div class="info-content">
-            <div class="info-row col-12 rounded p-4 mb-4 d-md-flex row">
+            <div class="info-row col-12 rounded p-4 mb-2 d-md-flex row">
                 <div class="info-image col-md-6">
                     <img src="assets/images/content-1.jpg" class="img-fluid rounded" alt="Event 1">
                 </div>
@@ -72,7 +75,7 @@
         </div>
 
         <div class="info-content">
-            <div class="info-row col-12 rounded p-4 mb-4 d-md-flex flex-md-row-reverse row">
+            <div class="info-row col-12 rounded p-4 mb-2 d-md-flex flex-md-row-reverse row">
                 <div class="info-image col-md-6">
                     <img src="assets/images/content-2.jpg" class="img-fluid rounded" alt="Event 2">
                 </div>
@@ -86,7 +89,7 @@
         </div>
 
         <div class="info-content">
-            <div class="info-row col-12 rounded p-4 mb-4 d-md-flex row">
+            <div class="info-row col-12 rounded p-4 mb-2 d-md-flex row">
                 <div class="info-image col-md-6">
                     <img src="assets/images/content-3.jpg" class="img-fluid rounded" alt="Event 1">
                 </div>
@@ -102,8 +105,235 @@
 
     <hr>
 
-    <section class="partners">
+    <section class="container my-5 mb-2 why-sponsor">
+        <div class="heading mb-4">
+            <div class="sub-heading">
+                <h4>WHY THE CONCLAVE MATTERS</h4>
+            </div>
+            <div class="main-heading">
+                <h1>REASONS TO BE A SPONSOR</h1>
+            </div>
+            <div class="heading-underline"></div>
+        </div>
 
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/images/content-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">NETWORKING</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem libero odio
+                            dicta aperiam qui voluptatum quae? Reiciendis deserunt cupiditate voluptatem beatae sapiente
+                            incidunt ad, ab cumque rerum nobis, eaque distinctio.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/images/content-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">CONNECTIONS</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum,
+                            repellat, velit iste deserunt odio nulla tenetur aperiam aliquid et cumque adipisci incidunt
+                            libero fugiat? Nihil quas labore aut libero.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/images/content-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">LEADERSHIP</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut delectus
+                            tempore accusantium quaerat eius deserunt amet nulla minima. Dolorem ullam est voluptatibus
+                            vero corrupti. Repellat nisi illum autem quas sint.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-4 sponsor-form">
+        <div class="narrow-container background-filter">
+            <!-- <div class="background-filter"></div> -->
+            <div class="heading mb-4">
+                <div class="sponsor-heading">
+                    <h1>BECOME A SPONSOR</h1>
+                </div>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="description">
+                <p>Thank you for your interest. Please fill out the form below to receive a copy of the 2024 Sponsorship
+                    Prospectus, and our team will be in touch!</p>
+            </div>
+            <div style="position: relative;">
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="LastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="LastName" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Company</label>
+                        <input type="text" class="form-control" id="company" placeholder="Enter your company name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form> 
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="countdown">
+
+        </div>
+    </section>
+
+    <section class="container mt-4">
+        <div class="meet_our_sponsors_heading mb-4">
+            <div class="sponsor-heading">
+                <h1>MEET OUR SPONSORS!</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 meet_our_sponsors_heading_underline"></div>
+                <div class="col-md-6 meet_our_sponsors_heading_underline"></div>
+            </div>
+        </div>
+
+        <div class="sponsor_list_wrapper">
+            <div id="premium" class="sponsor-item">
+                <h3 class="title">PREMIUM</h3>
+                <div class="sponsor-list row">
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <img src="assets/images/content-1.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="remarkable" class="sponsor-item">
+                <h3 class="title">REMARKABLE</h3>
+                <div class="sponsor-list row">
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="standard" class="sponsor-item">
+                <h3 class="title">STANDARD</h3>
+                <div class="sponsor-list row">
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sponsor col-md-3">
+                        <a href="#" class="spons-link">
+                            <picture>
+                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

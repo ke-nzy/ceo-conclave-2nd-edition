@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    scroll-behavior: smooth;
+    --body-theme: #212432;
+    --headings: #efdfba;
+    --Mahindi-boilo-form-background: #212432a8;
+    --dweeb-writing: #fff;
+    --button-background: #CFBC76;
+    --dorky-form-text-color: #CFBC76;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #212432;
@@ -25,9 +35,27 @@ header nav .nav-link:hover {
     color: #CFBC76;
 }
 
+hr {
+    border: 3px solid red;
+}
+
+p {
+    color: #fff;
+}
+
+h4 {
+    color: #fff;
+}
+
 .btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #FFC100;
+    color: #fff;
+    background-color: var(--button-background);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffbf00b8;
+    color: #fff;
     border: none;
 }
 
@@ -50,7 +78,7 @@ header nav .nav-link:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero-image-2.png'); 
+    background-image: url('../images/hero-image-2.png');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -66,12 +94,6 @@ header nav .nav-link:hover {
     margin-bottom: 30px;
 }
 
-.btn-primary:hover {
-    background-color: #ffbf00b8;
-    color: #fff;
-    border: none;
-}
-
 .info-content .info-row {
     display: flex;
     margin-bottom: 1rem;
@@ -83,17 +105,19 @@ header nav .nav-link:hover {
 }
 
 .info-content .info-text {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .info-content .info-text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #efdfba;
 }
 
 .info-content .info-text p {
     font-size: 1rem;
     line-height: 1.5;
+    color: white;
 }
 
 .info-row h2 {
@@ -110,4 +134,161 @@ header nav .nav-link:hover {
 .sidebar .nav-link:hover {
     background: #CFBC76;
     border-radius: 4px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading .main-heading h1 {
+    color: #efdfba;
+    font-family: "Londrina Solid", sans-serif;
+}
+
+.sponsor-heading h1 {
+    color: #efdfba;
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 4em;
+}
+
+.heading-underline {
+    width: 100px;
+    height: 4px;
+    background-color: #CFBC76;
+    margin: 0.5rem auto 1.5rem;
+}
+
+.card {
+    background-color: transparent;
+    border-color: #efdfba;
+    text-align: center;
+}
+
+.card-title {
+    color: #CFBC76;
+}
+
+.sponsor-form {
+    margin: auto;
+    max-width: 1360px;
+    width: 94.4444444444vw;
+}
+
+@media (max-width: 768px) {
+    .sponsor-form {
+        width: 90vw;
+    }
+}
+
+.sponsor-form .narrow-container {
+    --inner-padding: 40px;
+    margin: auto;
+    max-width: calc(680px + var(--inner-padding) * 2);
+    padding: var(--inner-padding);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+.background-filter {
+    background-color: var(--Mahindi-boilo-form-background);
+    height: 100%;
+    opacity: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+form ::-webkit-input-placeholder {
+    color: var(--dweeb-writing);
+}
+
+form :-moz-placeholder {
+    color: var(--dweeb-writing);
+}
+
+form ::-moz-placeholder {
+    color: var(--dweeb-writing);
+}
+
+form :-ms-input-placeholder {
+    color: var(--dweeb-writing);
+}
+
+form .form-label {
+    font-weight: 300;
+    color: var(--dweeb-writing);
+}
+
+form .form-control {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    background-color: transparent;
+    color: var(--dorky-form-text-color);
+}
+
+form .form-control:hover {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    background-color: transparent;
+}
+
+form .form-control:focus {
+    border-color: #CFBC76;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--dorky-form-text-color);
+}
+
+form input:-webkit-autofill {
+    -webkit-text-fill-color: var(--dorky-form-text-color);
+    -webkit-box-shadow: 0 0 0px 1000px var(--body-theme) inset; 
+    transition: background-color 5000s ease-in-out 0s; 
+}
+
+form input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px var(--body-theme) inset;
+    color: var(--dorky-form-text-color); 
+}
+
+form input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--body-theme) inset;
+    color: var(--dorky-form-text-color); 
+}
+
+.meet_our_sponsors_heading {
+    text-align: left;
+}
+
+.meet_our_sponsors_heading .row {
+
+}
+
+.meet_our_sponsors_heading_underline {
+    width: 150px;
+    height: 4px;
+    background-color: #CFBC76;
+    margin: 0.5rem;
+}
+
+.sponsor-item .title {
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: var(--headings);
+}
+
+.sponsor_list_wrapper {
+    margin-top: 2rem;
+}
+
+.sponsor-item .sponsor {
+    margin-bottom: 1rem;
 }
