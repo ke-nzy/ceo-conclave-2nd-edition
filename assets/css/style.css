@@ -398,8 +398,26 @@ form input:-webkit-autofill:focus {
     margin-bottom: 1rem;
 }
 
+.potrait-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
 
-.speakers-wrapper .speaker .row .image {
-    width: 60px;
-    height: 20px;
+.speaker-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.speaker-name {
+    color: var(--dweeb-writing);
+    font-size: 2em;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
 }
