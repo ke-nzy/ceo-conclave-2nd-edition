@@ -8,15 +8,19 @@
     scroll-behavior: smooth;
     --body-theme: #212432;
     --headings: #efdfba;
+    --card-title: #CFBC76;
     --Mahindi-boilo-form-background: #212432a8;
     --dweeb-writing: #fff;
     --button-background: #CFBC76;
+    --button-hover: #ffbf00b8;
+    --button-text: #fff;
+    --underline-color: #CFBC76;
     --dorky-form-text-color: #CFBC76;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #212432;
+    background-color: var(--body-theme);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,14 +52,14 @@ h4 {
 }
 
 .btn-primary {
-    color: #fff;
+    color: var(--button-text);
     background-color: var(--button-background);
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #ffbf00b8;
-    color: #fff;
+    background-color: var(--button-hover);
+    color: var(--button-text);
     border: none;
 }
 
@@ -111,7 +115,7 @@ h4 {
 .info-content .info-text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #efdfba;
+    color: var(--headings);
 }
 
 .info-content .info-text p {
@@ -121,7 +125,7 @@ h4 {
 }
 
 .info-row h2 {
-    color: #efdfba;
+    color: var(--headings);
     font-family: "Londrina Solid", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -136,17 +140,19 @@ h4 {
     border-radius: 4px;
 }
 
+
+/* Section headings titles */
 .heading {
     text-align: center;
 }
 
 .heading .main-heading h1 {
-    color: #efdfba;
+    color: var(--headings);
     font-family: "Londrina Solid", sans-serif;
 }
 
 .sponsor-heading h1 {
-    color: #efdfba;
+    color: var(--headings);
     font-family: "Londrina Solid", sans-serif;
     font-size: 4em;
 }
@@ -154,7 +160,7 @@ h4 {
 .heading-underline {
     width: 100px;
     height: 4px;
-    background-color: #CFBC76;
+    background-color: var(--underline-color);
     margin: 0.5rem auto 1.5rem;
 }
 
@@ -165,9 +171,11 @@ h4 {
 }
 
 .card-title {
-    color: #CFBC76;
+    color: var(--card-title);
 }
 
+
+/* Sponsor form registration */
 .sponsor-form {
     margin: auto;
     max-width: 1360px;
@@ -192,7 +200,7 @@ h4 {
 }
 
 .background-filter {
-    background-color: var(--Mahindi-boilo-form-background);
+    background-color: var(--body-theme);
     height: 100%;
     opacity: 80%;
     position: absolute;
@@ -263,6 +271,103 @@ form input:-webkit-autofill:focus {
     color: var(--dorky-form-text-color); 
 }
 
+
+/* Countdown clock section */
+.countdown-timer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #212432 0%, #efdfba 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.timer-heading h1 {
+    margin-bottom: 1rem;
+    color: #efdfba;
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.heading-underline {
+    width: 100px;
+    height: 4px;
+    background-color: #efdfba;
+    margin: 0.5rem auto 1.5rem;
+    border-radius: 2px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 1rem; 
+    flex-wrap: wrap;
+}
+
+.time-wrapper {
+    text-align: center;
+    flex: 1 1 100px;
+    min-width: 100px;
+}
+
+.time {
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 80px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.time:hover {
+    transform: scale(1.1);
+}
+
+.label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #efdfba;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .timer-heading h1 {
+        font-size: 2rem;
+    }
+
+    .time {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+
+    .label {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .time {
+        font-size: 1.25rem;
+        padding: 0.5rem;
+    }
+
+    .label {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* Meet our sponsors section */
 .meet_our_sponsors_heading {
     text-align: left;
 }
@@ -291,4 +396,10 @@ form input:-webkit-autofill:focus {
 
 .sponsor-item .sponsor {
     margin-bottom: 1rem;
+}
+
+
+.speakers-wrapper .speaker .row .image {
+    width: 60px;
+    height: 20px;
 }
