@@ -126,7 +126,7 @@ h4 {
 
 .info-row h2 {
     color: var(--headings);
-    font-family: "Londrina Solid", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -148,12 +148,12 @@ h4 {
 
 .heading .main-heading h1 {
     color: var(--headings);
-    font-family: "Londrina Solid", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .sponsor-heading h1 {
     color: var(--headings);
-    font-family: "Londrina Solid", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 4em;
 }
 
@@ -285,7 +285,7 @@ form input:-webkit-autofill:focus {
 .timer-heading h1 {
     margin-bottom: 1rem;
     color: #efdfba;
-    font-family: "Londrina Solid", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 2.5rem;
     letter-spacing: 2px;
 }
@@ -398,6 +398,28 @@ form input:-webkit-autofill:focus {
     margin-bottom: 1rem;
 }
 
+
+/* Speakers section tab */
+.speakers-wrapper {
+    padding: 20px;   
+}
+
+.speaker-container {
+    border: 1px solid #CFBC76;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.speaker-container:hover {
+    transform: scale(1.05);
+}
+
 .potrait-container {
     width: 200px;
     height: 200px;
@@ -409,6 +431,11 @@ form input:-webkit-autofill:focus {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.speaker-container:hover .speaker-image {
+    transform: scale(1.1);
 }
 
 .speaker-name {
@@ -420,4 +447,55 @@ form input:-webkit-autofill:focus {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #efdfba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.speaker-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .speaker-container {
+        margin-bottom: 20px;
+    }
+    
+    .potrait-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .text-container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .speaker-name {
+        font-size: 1.5em;
+    }
+}
+
+/* Flexbox for gap between rows */
+.speaker .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
 }
