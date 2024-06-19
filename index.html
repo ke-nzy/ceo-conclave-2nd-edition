@@ -12,10 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -103,7 +107,66 @@
         </div>
     </section>
 
-    <hr>
+    <!-- <hr> -->
+
+    <section class="container why-attend-section mt-4">
+        <div class="flex-container row">
+            <div class="col-md-4 col-lg-4">
+                <h1 class="headline">Why attend the CONCLAVE?</h1>
+                <a href="" class="download-link" download>
+                    <span class="h6">Download the event overview</span>
+                </a>
+            </div>
+            <div class="col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>image</p>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="text-content">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>image</p>
+                            </div>
+                            <div class="col-md-10">
+                                wwvwcwcwcw
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>image</p>
+                            </div>
+                            <div class="col-md-10">
+                                wwvwcwcwcw
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>image</p>
+                            </div>
+                            <div class="col-md-10">
+                                wwvwcwcwcw
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Why you you should join the conclave -->
     <section class="container my-5 mb-2 why-sponsor">
@@ -157,86 +220,111 @@
         </div>
     </section>
 
-    <section class="container">
-        <div class="">
-            <div class="heading mb-4">
-                <div class="main-heading">
-                    <h1>SPEAKERS</h1>
-                </div>
-                <div class="sub-heading">
-                    <h4>When we talk about an amazing lineup...</h4>
-                </div>
-                <div class="heading-underline"></div>
+    <!-- Speakers at the event section -->
+    <section class="container mt-4 speakers-section">
+        <div class="heading mb-4">
+            <div class="main-heading">
+                <h1>SPEAKERS</h1>
             </div>
-            <div class="speakers-wrapper">
-                <div class="speaker">
-                    <div class="row">
-                        <div class="col-md-6 mb-3 speaker-container">
-                            <div class="row">
-                                <div class="col-6 col-md-6 col-lg-6 potrait-container">
-                                    <img class="speaker-image" src="assets/images/Potraits/person-1.jpg" alt="">
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-6 text-container">
-                                    <div class="center-div">
-                                        <h1 class="speaker-name">Kennedy Ngugi</h1>
-                                        <p class="speaker-title">Managing Director</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="overlay">
-                                <p>More information about Kennedy Ngugi...</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3 speaker-container">
-                            <div class="row">
-                                <div class="col-6 col-md-6 col-lg-6 potrait-container">
-                                    <img class="speaker-image" src="assets/images/Potraits/person-5.jpg" alt="">
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-6 text-container">
-                                    <h1 class="speaker-name">Kennedy Ngugi</h1>
-                                    <p class="speaker-title">Managing Director</p>
-                                </div>
-                            </div>
-                            <div class="overlay">
-                                <p>More information about Kennedy Ngugi...</p>
-                            </div>
+            <h4 class="sub-heading">When we talk about an amazing lineup...</h4>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="speakers-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="speaker-container swiper-slide">
+                    <div class="speaker-image">
+                        <img src="assets/images/Potraits/person-1.jpg" alt="Kennedy Ngugi">
+                    </div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">Kennedy Ngugi</h2>
+                        <p class="speaker-title">Managing Director</p>
+                        <div class="speaker-overlay">
+                            <p>Kennedy Ngugi is a visionary leader with over 20 years of experience in managing diverse
+                                teams and driving company growth.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3 speaker-container">
-                            <div class="row">
-                                <div class="col-6 col-md-6 col-lg-6 potrait-container">
-                                    <img class="speaker-image" src="assets/images/Potraits/person-3.jpg" alt="">
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-6 text-container">
-                                    <h1 class="speaker-name">Mr. Puss in Boots</h1>
-                                    <p class="speaker-title">Catnip Enterprises</p>
-                                </div>
-                            </div>
-                            <div class="overlay">
-                                <p>More information about Mr. Puss in Boots...</p>
-                            </div>
+                </div>
+                <div class="speaker-container swiper-slide">
+                    <div class="speaker-image">
+                        <img src="assets/images/Potraits/person-2.jpg" alt="Jane Doe">
+                    </div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">Jane Doe</h2>
+                        <p class="speaker-title">Chief Executive Officer</p>
+                        <div class="speaker-overlay">
+                            <p>Jane Doe is an accomplished CEO known for her strategic vision and commitment to
+                                innovation in the tech industry.</p>
                         </div>
-                        <div class="col-md-6 mb-3 speaker-container">
-                            <div class="row">
-                                <div class="col-6 col-md-6 col-lg-6 potrait-container">
-                                    <img class="speaker-image" src="assets/images/Potraits/person-7.jpg" alt="">
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-6 text-container">
-                                    <h1 class="speaker-name">Kennedy Ngugi</h1>
-                                    <p class="speaker-title">Managing Director</p>
-                                </div>
-                            </div>
-                            <div class="overlay">
-                                <p>More information about Kennedy Ngugi...</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="speaker-container swiper-slide">
+                    <div class="speaker-image">
+                        <img src="assets/images/Potraits/person-3.jpg" alt="John Smith">
+                    </div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">John Smith</h2>
+                        <p class="speaker-title">Chief Technology Officer</p>
+                        <div class="speaker-overlay">
+                            <p>John Smith is a tech enthusiast with a passion for developing cutting-edge technologies
+                                that transform industries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-container swiper-slide">
+                    <div class="speaker-image">
+                        <img src="assets/images/Potraits/person-4.jpg" alt="Alice Johnson">
+                    </div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">Alice Johnson</h2>
+                        <p class="speaker-title">Chief Financial Officer</p>
+                        <div class="speaker-overlay">
+                            <p>Alice Johnson has a keen eye for financial strategy and is dedicated to ensuring the
+                                company's financial health.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-container swiper-slide">
+                    <div class="speaker-image">
+                        <img src="assets/images/Potraits/person-5.jpg" alt="Michael Brown">
+                    </div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">Michael Brown</h2>
+                        <p class="speaker-title">Head of Marketing</p>
+                        <div class="speaker-overlay">
+                            <p>Michael Brown is a marketing guru with a talent for crafting compelling campaigns that
+                                resonate with audiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-container swiper-slide">
+                    <div class="speaker-image">
+                        <img src="assets/images/Potraits/person-6.jpg" alt="Emily Davis">
+                    </div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">Emily Davis</h2>
+                        <p class="speaker-title">Head of Sales</p>
+                        <div class="speaker-overlay">
+                            <p>Emily Davis excels in building strong client relationships and driving sales growth
+                                through innovative strategies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-container swiper-slide">
+                    <div class="speaker-image">
+                        <img src="assets/images/Potraits/person-7.jpg" alt="David Wilson">
+                    </div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">David Wilson</h2>
+                        <p class="speaker-title">Chief Operating Officer</p>
+                        <div class="speaker-overlay">
+                            <p>David Wilson ensures operational excellence and is committed to optimizing processes for
+                                maximum efficiency.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
 
     <!-- Event sponsor form registration -->
     <section class="container mt-4 sponsor-form">
@@ -274,13 +362,13 @@
                             <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
                         </div>
                     </div>
-                    
+
                     <div class="mb-3">
                         <label for="company" class="form-label">Company</label>
                         <input type="text" class="form-control" id="company" placeholder="Enter your company name">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
-                </form> 
+                </form>
             </div>
         </div>
     </section>
@@ -312,7 +400,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Sponsor list section -->
     <section class="container mt-4">
         <div class="meet_our_sponsors_heading mb-4">
@@ -332,7 +420,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-1.jpg">
                                 <img src="assets/images/content-1.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -340,7 +430,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-1.jpg">
                                 <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -348,7 +440,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-1.jpg">
                                 <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -356,13 +450,15 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-1.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-1.jpg">
                                 <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
                     </div>
                 </div>
-            </div>            
+            </div>
 
             <div id="remarkable" class="sponsor-item">
                 <h3 class="title">REMARKABLE</h3>
@@ -370,7 +466,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-2.jpg">
                                 <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -378,7 +476,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-2.jpg">
                                 <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -386,7 +486,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-2.jpg">
                                 <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -394,7 +496,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-2.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-2.jpg">
                                 <img src="assets/images/content-2.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -408,7 +512,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-3.jpg">
                                 <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -416,7 +522,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-3.jpg">
                                 <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -424,7 +532,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-3.jpg">
                                 <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -432,7 +542,9 @@
                     <div class="sponsor col-6 col-md-4 col-lg-3">
                         <a href="#" class="spons-link">
                             <picture>
-                                <source type="image/webp" sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="assets/images/content-3.jpg">
+                                <source type="image/webp"
+                                    sizes="(max-width: 768px) 320px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px"
+                                    srcset="assets/images/content-3.jpg">
                                 <img src="assets/images/content-3.jpg" alt="Sponsor Image" class="img-fluid">
                             </picture>
                         </a>
@@ -450,6 +562,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/js/script.js"></script>
 </body>

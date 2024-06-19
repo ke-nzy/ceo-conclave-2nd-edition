@@ -51,6 +51,12 @@ h4 {
     color: #fff;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .btn-primary {
     color: var(--button-text);
     background-color: var(--button-background);
@@ -138,6 +144,25 @@ h4 {
 .sidebar .nav-link:hover {
     background: #CFBC76;
     border-radius: 4px;
+}
+
+/* section for the why attend the event */
+.why-attend-section {
+    background-color: #ddd;
+}
+
+.headline {
+    text-transform: uppercase;
+    font-family: "Agharti", "Agharti fallback", sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.download-link {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
 }
 
 
@@ -399,57 +424,81 @@ form input:-webkit-autofill:focus {
 }
 
 
-/* Speakers section tab */
-.speakers-wrapper {
-    padding: 20px;   
+/* Speakers Section */
+.speakers-section .heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.heading-underline {
+    width: 100px;
+    height: 4px;
+    background-color: #efdfba;
+    margin: 0 auto 40px;
+}
+
+.speakers-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
 }
 
 .speaker-container {
+    flex: 0 0 300px;
+    background: linear-gradient(135deg, #212432 0%, #efdfba 100%);
     border: 1px solid #CFBC76;
-    padding: 10px;
-    position: relative;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
+    position: relative;
+    cursor: pointer;
 }
 
 .speaker-container:hover {
     transform: scale(1.05);
 }
 
-.potrait-container {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+.speaker-image {
+    height: 400px;
+    width: 390px;
 }
 
-.speaker-image {
+.speaker-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    transition: transform 0.3s;
+    border-bottom: 1px solid #CFBC76;
 }
 
-.speaker-container:hover .speaker-image {
-    transform: scale(1.1);
+.speaker-info {
+    padding: 20px;
+    text-align: center;
 }
 
 .speaker-name {
-    color: var(--dweeb-writing);
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #212432;
 }
 
-.text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
+.speaker-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #212432;
 }
 
-.overlay {
+.speaker-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -465,37 +514,21 @@ form input:-webkit-autofill:focus {
     transition: opacity 0.3s;
     padding: 20px;
     box-sizing: border-box;
-    border-radius: 10px;
 }
 
-.speaker-container:hover .overlay {
+.speaker-container:hover .speaker-overlay {
     opacity: 1;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .main-heading {
+        font-size: 2em;
+    }
+    .sub-heading {
+        font-size: 1em;
+    }
     .speaker-container {
-        margin-bottom: 20px;
+        flex: 0 0 90%;
     }
-    
-    .potrait-container {
-        width: 100%;
-        height: auto;
-    }
-    
-    .text-container {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .speaker-name {
-        font-size: 1.5em;
-    }
-}
-
-/* Flexbox for gap between rows */
-.speaker .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; 
 }
