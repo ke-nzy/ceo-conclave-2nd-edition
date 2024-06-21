@@ -20,6 +20,7 @@
     --button-text: #fff;
     --underline-color: #CFBC76;
     --dorky-form-text-color: #CFBC76;
+    --secondary-background-color: #cfbc7689;
 }
 
 body {
@@ -335,10 +336,10 @@ h4 {
 }
 
 .convince {
-    background-color: #cfbc7689;
+    background-color: var(--secondary-background-color);
     opacity: 1;
     align-items: center;
-    color: var(--Neutrals-Eclipse);
+    color: var(--dweeb-writing);
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -685,7 +686,7 @@ form input:-webkit-autofill:focus {
 
 .content h1 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 150px;
+    font-size: 6em;
     font-style: normal;
     font-weight: 900;
     letter-spacing: 7.2px;
@@ -829,7 +830,7 @@ form input:-webkit-autofill:focus {
         margin-bottom: 3.5rem;
     }
     .content h1 {
-        font-size: 80px;
+        font-size: 3em;
     }
 }
 
@@ -888,6 +889,9 @@ form input:-webkit-autofill:focus {
 
 
 /* Rate Card Section */
+.rate-card {
+    /* background-color: var(--secondary-background-color); */
+}
 .rate-card .heading {
     text-align: center;
     margin-bottom: 40px;
@@ -919,24 +923,25 @@ form input:-webkit-autofill:focus {
     transition: transform 0.3s;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .card-header {
     font-size: 1.5em;
-    padding: 20px;
+    padding: 70px;
     text-align: center;
     z-index: 1;
     position: relative;
+    color: #fff;
 }
 
 .card-body {
     padding: 30px 20px 20px;
     text-align: left;
     background-color: #212432;
-    border-radius: 10px;
+    border-radius: 20px 20px 10px 10px;
     position: relative;
-    top: -20px;
+    top: -20px; 
     z-index: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #efdfba;
@@ -957,32 +962,48 @@ form input:-webkit-autofill:focus {
     color: #efdfba;
 }
 
-/* Hover effect for card */
 .card:hover {
     transform: scale(1.05);
 }
 
 /* Color adjustments */
-.card-header.bg-primary {
-    background-color: #007bff;
-}
-
-.card-header.bg-secondary {
-    background-color: #6c757d;
-}
-
-.card-header.bg-light {
-    background-color: #f8f9fa;
+.card-header.platinum {
+    background-color: #e5e4e2;
+    font-weight: 400;
     color: #212432;
 }
 
+.card-header.gold {
+    background-color: var(--card-title);
+    font-weight: 400; 
+    color: #212432;
+}
+
+.card-header.silver {
+    background-color: #c0c0c0; 
+    font-weight: 400;
+    color: #212432;
+}
+
+
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .card-header {
+        padding: 40px;
+    }
+}
+
 @media (max-width: 768px) {
     .main-heading {
         font-size: 2em;
     }
     .sub-heading {
         font-size: 1em;
+    }
+
+    .card {
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .card-header {
         font-size: 1.2em;
@@ -998,6 +1019,10 @@ form input:-webkit-autofill:focus {
     }
     .sub-heading {
         font-size: 0.9em;
+    }
+    .card {
+        margin-right: 15px;
+        margin-left: 15px;
     }
     .card-header {
         font-size: 1em;
