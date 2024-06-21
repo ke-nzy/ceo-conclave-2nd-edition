@@ -254,7 +254,7 @@ h4 {
         font-size: 0.9em;
     }
     .card-icon {
-        font-size: 2em;
+        font-size: 1em;
     }
     .text-content {
         padding-left: 5px;
@@ -598,6 +598,7 @@ form input:-webkit-autofill:focus {
     transition: transform 0.3s;
     position: relative;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .speaker-container:hover {
@@ -605,8 +606,8 @@ form input:-webkit-autofill:focus {
 }
 
 .speaker-image {
-    height: 400px;
-    width: 390px;
+    height: 320px;
+    width: 100%;
 }
 
 .speaker-image img {
@@ -655,13 +656,29 @@ form input:-webkit-autofill:focus {
     opacity: 1;
 }
 
+/* Swiper Pagination */
+.swiper-pagination {
+    bottom: 0px !important; 
+}
+
+.swiper-pagination-bullet {
+    background: #cfbc76; 
+    opacity: 0.6;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: #212432; 
+    opacity: 1;
+}
+
 /* Swiper Navigation */
 .swiper-button-next,
 .swiper-button-prev {
-    color: #000;
-    opacity: 0.5;
+    color: var(--button-background);
+    opacity: 1;
     transition: opacity 0.3s;
-    display: none; /* Hide by default */
+    display: none; 
 }
 
 .swiper-button-next:hover,
@@ -683,17 +700,31 @@ form input:-webkit-autofill:focus {
     right: 10px;
     font-size: 1em;
     color: #000;
-    display: none; /* Hide by default */
+    display: none;
 }
 
 @media (min-width: 768px) {
     .swiper-button-next,
     .swiper-button-prev {
-        display: block; /* Show on larger screens */
+        display: block; 
     }
 
     .swiper-navigation-tracker {
-        display: block; /* Show on larger screens */
+        display: block; 
+    }
+}
+
+@media (max-width: 768px) {
+    .speaker-container {
+        width: 250px !important;
+        flex: none !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .speaker-container {
+        width: 200px;
+        flex: none !important;
     }
 }
 
