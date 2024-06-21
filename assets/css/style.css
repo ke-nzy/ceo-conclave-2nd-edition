@@ -11,7 +11,7 @@
     --body-theme: #212432;
     --section-background-color: #fef5eb;
     --headings: #efdfba;
-    --svg-image-color: #efdfba;
+    --icon-image-color: #efdfba;
     --card-title: #CFBC76;
     --Mahindi-boilo-form-background: #212432a8;
     --dweeb-writing: #fff;
@@ -208,11 +208,13 @@ h4 {
     width: 0; 
 }
 
-.card-icon img {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    fill: var(--svg-image-color);
+.card-icon {
+    font-size: 1.5em;
+    color: var(--icon-image-color);
+}
+
+.icon-container {
+    padding-right: 5px;
 }
 
 .text-content {
@@ -233,9 +235,15 @@ h4 {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .headline {
+        font-size: 2.5em;
+        /* text-align: center; */
+    }
+}
 @media (max-width: 768px) {
     .headline {
-        font-size: 2em;
+        font-size: 3em;
         text-align: center;
     }
     .humongous {
@@ -244,6 +252,9 @@ h4 {
     }
     .small {
         font-size: 0.9em;
+    }
+    .card-icon {
+        font-size: 2em;
     }
     .text-content {
         padding-left: 5px;
@@ -267,6 +278,9 @@ h4 {
     .small {
         font-size: 0.8em;
     }
+    .card-icon {
+        font-size: 1.5em;
+    }
     .description p {
         font-size: 0.8em;
     }
@@ -274,7 +288,6 @@ h4 {
         margin-bottom: 15px;
     }
 }
-
 
 
 /* Section headings titles */
@@ -321,6 +334,16 @@ h4 {
 @media (max-width: 768px) {
     .sponsor-form {
         width: 90vw;
+    }
+
+    .sponsor-heading h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sponsor-heading h1 {
+        font-size: 2.3em;
     }
 }
 
@@ -563,6 +586,7 @@ form input:-webkit-autofill:focus {
     gap: 20px;
     overflow-x: auto;
     padding: 20px 0;
+    position: relative;
 }
 
 .speaker-container {
@@ -630,6 +654,50 @@ form input:-webkit-autofill:focus {
 .speaker-container:hover .speaker-overlay {
     opacity: 1;
 }
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    display: none; /* Hide by default */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-navigation-tracker {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1em;
+    color: #000;
+    display: none; /* Hide by default */
+}
+
+@media (min-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block; /* Show on larger screens */
+    }
+
+    .swiper-navigation-tracker {
+        display: block; /* Show on larger screens */
+    }
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
