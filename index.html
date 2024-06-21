@@ -23,27 +23,55 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="">
-    <header class="text-white bg-dark fixed-top">
-        <div class="container d-flex justify-content-between align-items-center py-3">
-            <div class="logo">
-                <!-- <a href="#"><img src="" alt="logo" class="img-fluid" style="max-height: 50px;"></a> -->
-            </div>
-            <nav class="d-none d-md-flex">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="speakers.html">Speakers</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn btn-primary">REGISTER</a>
-            <div class="menu-toggle d-md-none" id="mobile-menu
-            ">
-                <i class="fas fa-bars text-white"></i>
+<body>
+    <!-- NAVIGATION BAR CODE  -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+        <div class="container" style="padding: 0 !important;">
+            <a class="navbar-brand py-0" href="https://asiaafrika.org/" target="_blank"><img
+                    src="assets/images/Logo/acc.jpeg" style="height: 30px;" alt="acc logo"><span class="fw-bold"
+                    style="color: #3b3b3b;"></span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand py-0" href="https://asiaafrika.org/" target="_blank"><img
+                            src="assets/images/Logo/acc.jpeg" style="height: 30px;" alt="acc logo"><span class="fw-bold"
+                            style="color: #3b3b3b;"></span></a>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-underline justify-content-evenly flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="speakers.html">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sponsors.html">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactus.html"> <button class="btn btn-dark" type="submit">Contact Us</button></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
+    </nav>
 
     <aside class="sidebar bg-dark text-white position-fixed vh-100" id="sidebar"
         style="left: -250px; transition: left 0.3s;">
