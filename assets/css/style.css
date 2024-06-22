@@ -20,6 +20,7 @@
     --button-text: #fff;
     --underline-color: #CFBC76;
     --dorky-form-text-color: #CFBC76;
+    --secondary-background-color: #cfbc7689;
 }
 
 body {
@@ -43,6 +44,10 @@ header nav .nav-link:hover {
     color: #CFBC76;
 }
 
+a {
+    text-decoration: none;
+}
+
 hr {
     border: 3px solid red;
 }
@@ -59,6 +64,41 @@ h4 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.site-button {
+    color: var(--button-text);
+    background-color: transparent;
+    border: #cfbc76 2px solid;
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    overflow: clip;
+    padding: 1.25em 1.71em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.site-button:hover {
+    background-color: var(--button-background);
+    color: var(--button-text);
+}
+
+.site-button span {
+    position: relative;
+    z-index: 1;
+    font-size: 0.9em;
+} 
+
+@media (max-width: 768px) {
+    .site-button {
+        padding: 1em 1em;
+    }
+    .site-button span {
+        font-size: 0.8em;
+    }
 }
 
 .btn-primary {
@@ -254,7 +294,7 @@ h4 {
         font-size: 0.9em;
     }
     .card-icon {
-        font-size: 2em;
+        font-size: 1em;
     }
     .text-content {
         padding-left: 5px;
@@ -286,6 +326,53 @@ h4 {
     }
     .icon-headline-card {
         margin-bottom: 15px;
+    }
+}
+
+
+/* Convince your company/boss */
+.convince-container {
+    margin: 0;
+}
+
+.convince {
+    background-color: var(--secondary-background-color);
+    opacity: 1;
+    align-items: center;
+    color: var(--dweeb-writing);
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 46px 30px;
+    transition: .3s ease;
+}
+
+.convince-description {
+    line-height: 1.2;
+    max-width: 650px;
+    font-size: 1.9em;
+    font-weight: 900;
+    letter-spacing: 2.8px;
+    line-height: 1.6125;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .convince {
+        display: block;
+    }
+    .convince-description {
+        margin-bottom: 46px;
+        font-size: 1.2em;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .convince-description {
+        margin-bottom: 46px;
+        font-size: 1em;
+        max-width: none;
     }
 }
 
@@ -581,16 +668,49 @@ form input:-webkit-autofill:focus {
     margin: 0 auto 40px;
 }
 
-.speakers-slider {
+.standard-head {
+    align-items: center;
+    color: var(--headings);
     display: flex;
-    gap: 20px;
-    overflow-x: auto;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.content {
+    margin-bottom: 3.5rem;
+    max-width: 100%;
+    width: 80ch;
+}
+
+.content h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 6em;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 7.2px;
+    line-height: 102.6%;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .51px;
+    line-height: 161.25%;
+}
+
+.speakers-slider {
+    overflow: hidden; 
     padding: 20px 0;
     position: relative;
 }
 
 .speaker-container {
-    flex: 0 0 300px;
+    flex: 0 0 250px;
     background: linear-gradient(135deg, #212432 0%, #efdfba 100%);
     border: 1px solid #CFBC76;
     border-radius: 10px;
@@ -598,6 +718,7 @@ form input:-webkit-autofill:focus {
     transition: transform 0.3s;
     position: relative;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .speaker-container:hover {
@@ -605,8 +726,8 @@ form input:-webkit-autofill:focus {
 }
 
 .speaker-image {
-    height: 400px;
-    width: 390px;
+    height: 320px;
+    width: 250px;
 }
 
 .speaker-image img {
@@ -655,13 +776,29 @@ form input:-webkit-autofill:focus {
     opacity: 1;
 }
 
+/* Swiper Pagination */
+.swiper-pagination {
+    bottom: 0px !important; 
+}
+
+.swiper-pagination-bullet {
+    background: #cfbc76; 
+    opacity: 0.6;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: #212432; 
+    opacity: 1;
+}
+
 /* Swiper Navigation */
 .swiper-button-next,
 .swiper-button-prev {
-    color: #000;
-    opacity: 0.5;
+    color: var(--button-background);
+    opacity: 1;
     transition: opacity 0.3s;
-    display: none; /* Hide by default */
+    display: none; 
 }
 
 .swiper-button-next:hover,
@@ -683,17 +820,54 @@ form input:-webkit-autofill:focus {
     right: 10px;
     font-size: 1em;
     color: #000;
-    display: none; /* Hide by default */
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .standard-head {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 3.5rem;
+    }
+    .content h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-bottom: 2em;
+    }
+    .content h1 {
+        font-size: 40px;
+    }
 }
 
 @media (min-width: 768px) {
     .swiper-button-next,
     .swiper-button-prev {
-        display: block; /* Show on larger screens */
+        display: block; 
     }
 
     .swiper-navigation-tracker {
-        display: block; /* Show on larger screens */
+        display: block; 
+    }
+    .content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .speaker-container {
+        width: 250px !important;
+        flex: none !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .speaker-container {
+        width: 200px;
+        flex: none !important;
     }
 }
 
@@ -709,5 +883,151 @@ form input:-webkit-autofill:focus {
     }
     .speaker-container {
         flex: 0 0 90%;
+    }
+}
+
+
+
+/* Rate Card Section */
+.rate-card {
+    /* background-color: var(--secondary-background-color); */
+}
+.rate-card .heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #efdfba;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #efdfba;
+}
+
+.heading-underline {
+    width: 100px;
+    height: 4px;
+    background-color: #efdfba;
+    margin: 0 auto 40px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+    cursor: pointer;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.card-header {
+    font-size: 1.5em;
+    padding: 70px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+}
+
+.card-body {
+    padding: 30px 20px 20px;
+    text-align: left;
+    background-color: #212432;
+    border-radius: 20px 20px 10px 10px;
+    position: relative;
+    top: -20px; 
+    z-index: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #efdfba;
+}
+
+.card-text {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.card-text li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.card-text li strong {
+    color: #efdfba;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Color adjustments */
+.card-header.platinum {
+    background-color: #e5e4e2;
+    font-weight: 400;
+    color: #212432;
+}
+
+.card-header.gold {
+    background-color: var(--card-title);
+    font-weight: 400; 
+    color: #212432;
+}
+
+.card-header.silver {
+    background-color: #c0c0c0; 
+    font-weight: 400;
+    color: #212432;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card-header {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2em;
+    }
+    .sub-heading {
+        font-size: 1em;
+    }
+
+    .card {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .card-header {
+        font-size: 1.2em;
+    }
+    .card-text li {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-heading {
+        font-size: 1.5em;
+    }
+    .sub-heading {
+        font-size: 0.9em;
+    }
+    .card {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .card-header {
+        font-size: 1em;
+    }
+    .card-text li {
+        font-size: 0.8em;
     }
 }
