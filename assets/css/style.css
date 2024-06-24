@@ -364,8 +364,8 @@ h4 {
 .convince-description {
     line-height: 1.2;
     max-width: 650px;
-    font-size: 1.9em;
-    font-weight: 900;
+    font-size: 1.5em;
+    font-weight: 700;
     letter-spacing: 2.8px;
     line-height: 1.6125;
     text-transform: uppercase;
@@ -760,12 +760,21 @@ form input:-webkit-autofill:focus {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #212432;
+    text-transform: capitalize;
 }
 
 .speaker-title {
     font-size: 1em;
     margin-bottom: 10px;
     color: #212432;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em; 
+    max-height: 2.4em; 
 }
 
 .speaker-overlay {
