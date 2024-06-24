@@ -23,6 +23,8 @@
     --dorky-form-text-color: #CFBC76;
     --text-decoration: #cfbc76;
     --secondary-background-color: #cfbc7689;
+    --foolish-background: #00000057;
+    --milky-text: #b6c7d6:
 }
 
 body {
@@ -60,6 +62,23 @@ p {
 
 h4 {
     color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: list-item;
+    padding: 0;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+i {
+    vertical-align: bottom;
 }
 
 .container {
@@ -1059,3 +1078,192 @@ form input:-webkit-autofill:focus {
     color: var(--text-decoration);
     text-decoration: solid;
 }
+
+/* Footer section */
+.global-footer {
+    padding: 3rem 0;
+    background-color: var(--foolish-background);
+    color: var(--dweeb-writing);
+}
+
+.global-footer a {
+    transition: .25s ease;
+    color: var(--dweeb-writing, #fff);
+}
+
+.global-footer a:hover {
+    color: var(--headings);
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-row {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer-logo {
+    width: 80px;
+}
+
+.global-footer .footer-wrapper .footer-row .conclave-info {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.event-details {
+    color: var(--dweeb-writing, #b6c7d6);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    line-height: normal;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.global-footer .footer-wrapper .column-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+}
+
+.site-footer-links {
+    color: var(--dweeb-writing, #fff);
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    gap: 1.75rem;
+    letter-spacing: 1.3px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.global-footer .footer-wrapper .footer-row .links {
+    display: flex;
+}
+
+.aacc {
+    align-items: center;
+    color: var(--dweeb-writing, #fff);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.aacc a {
+    color: var(--dweeb-writing, #fff);
+}
+
+.copyright {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .315px;
+}
+
+.bottom-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.socials {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.socials .hashtag {
+    color: var(--milky-text, #b6c7d6);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.socials .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    background-color: transparent;
+    border: #b0b0b0 2px solid; 
+    border-radius: 50%; 
+    transition: background-color 0.3s ease;
+}
+
+.social-icon a {
+    color: var(--dweeb-writing); /* Color of the icon */
+    font-size: 18px; /* Size of the icon */
+}
+
+.social-icon:hover {
+    background-color: #b0b0b0; 
+}
+
+.social-icon a:hover {
+    color: var(--headings); 
+}
+
+.sr-only {
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (max-width: 1040px) {
+    .global-footer .footer-wrapper {
+        gap: 1.5rem;
+    }
+    .global-footer .footer-wrapper .footer-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .global-footer .footer-wrapper .column-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .desktop {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-details {
+        letter-spacing: 0;
+    }
+    .site-footer-links {
+        letter-spacing: 0;
+    }
+}
+
