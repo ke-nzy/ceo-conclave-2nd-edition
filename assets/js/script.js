@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
           slidesPerView: 3
         }
       },
-      loop: true,
+      loop: false,
       pagination: {
         el: '.swiper-pagination',
         clickable: true

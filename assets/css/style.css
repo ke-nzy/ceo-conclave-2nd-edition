@@ -9,6 +9,7 @@
 :root {
     scroll-behavior: smooth;
     --body-theme: #212432;
+    --text-writing: #212432;
     --section-background-color: #fef5eb;
     --headings: #efdfba;
     --icon-image-color: #efdfba;
@@ -20,6 +21,7 @@
     --button-text: #fff;
     --underline-color: #CFBC76;
     --dorky-form-text-color: #CFBC76;
+    --text-decoration: #cfbc76;
     --secondary-background-color: #cfbc7689;
 }
 
@@ -193,141 +195,153 @@ h4 {
 
 /* Why Attend Section */
 .why-attend-section {
-    background-color: transparent;
-    /* max-width: 100%; */
-    /* padding: 20px; */
+    background-color: var(--section-background-color);
+    padding: 50px 20px;
     /* border-radius: 10px; */
+    color: var(--text-writing);
 }
 
-.humongous {
-    padding-right: 20px;
-    margin-bottom: 20px;
-}
-
-.headline {
+.section-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3.5em;
     text-transform: uppercase;
-    font-family: "Agharti", "Agharti fallback", sans-serif;
-    font-size: 3em;
     font-weight: 600;
-    margin-bottom: 2rem;
-    color: var(--headings);
+    margin-bottom: 1rem;
+    letter-spacing: 5.2px;
+    line-height: 1.026;
+}
+
+.desktop-heading {
+    display: block;
+    margin-bottom: 2.5em;
+    line-height: 1.026;
+    letter-spacing: 7.2px;
+}
+
+.tablet-mobile-heading {
+    display: none;
 }
 
 .download-link {
     text-decoration: none;
+    color: var(--text-writing);
     font-weight: 600;
     letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: var(--dweeb-writing);
+    display: block;
+}
+
+.download-link:hover {
+    color: #CFBC76;
 }
 
 .download-link .h6 {
     font-size: 0.7em;
+    margin-bottom: 0;
+    display: inline-block;
 }
 
 .download-link .hover-line {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
-    height: 2px; 
-    width: 0; 
-    background-color: #cf1b57; 
-    transition: width 0.3s ease; 
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: #CFBC76;
+    transition: width 0.3s ease;
 }
 
-.download-link:hover .h6 {
-    color: #cf1b57; 
+.download-link:hover .hover-line {
+    width: 100%;
 }
 
-.download-link:hover .hover-line:hover {
-    width: 100%; 
+.reason-card {
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
 }
 
-.download-link .hover-line {
-    width: 0; 
+.reason-card:hover {
+    transform: translateY(-10px);
 }
 
-.card-icon {
+.reason-icon {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+}
+
+.grow-card .reason-icon {
+    color: #28a745; /* Green */
+}
+
+.connect-card .reason-icon {
+    color: #007bff; /* Blue */
+}
+
+.inspire-card .reason-icon {
+    color: #ffc107; /* Yellow */
+}
+
+.enjoy-card .reason-icon {
+    color: #17a2b8; /* Teal */
+}
+
+.reason-title {
     font-size: 1.5em;
-    color: var(--icon-image-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
-.icon-container {
-    padding-right: 5px;
+.reason-description {
+    font-size: 1em;
+    color: #6c757d;
 }
 
-.text-content {
-    padding-left: 10px;
-}
-
-.description p {
-    color: var(--dweeb-writing);
-}
-
-.small {
-    margin-bottom: 16px;
-    letter-spacing: 5.04px;
-    font-weight: 900;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    color: var(--headings);
-}
-
-/* Responsive Design */
 @media (max-width: 1024px) {
-    .headline {
+    .section-title {
         font-size: 2.5em;
-        /* text-align: center; */
     }
-}
-@media (max-width: 768px) {
-    .headline {
-        font-size: 3em;
-        text-align: center;
-    }
-    .humongous {
-        padding-right: 0;
-        text-align: center;
-    }
-    .small {
-        font-size: 0.9em;
-    }
-    .card-icon {
-        font-size: 1em;
-    }
-    .text-content {
-        padding-left: 5px;
-    }
-    .description p {
-        font-size: 0.9em;
-    }
-    .flex-container {
-        flex-direction: column;
-        /* align-items: center; */
-    }
-    .icon-headline-card {
-        margin-bottom: 20px;
+    .tablet-mobile-heading {
+        margin-bottom: 4em;
     }
 }
 
-@media (max-width: 576px) {
-    .headline {
-        font-size: 1.5em;
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2em;
     }
-    .small {
-        font-size: 0.8em;
+    .desktop-heading {
+        display: none;
     }
-    .card-icon {
-        font-size: 1.5em;
+    .tablet-mobile-heading {
+        display: block; 
+        margin-bottom: 2em;
     }
-    .description p {
-        font-size: 0.8em;
+    .download-link {
+        text-align: center;
+        margin-bottom: 2rem;
     }
-    .icon-headline-card {
-        margin-bottom: 15px;
+    .download-link .h6 {
+        font-size: 0.9em;
+        display: block;
+    }
+    .reason-card {
+        padding: 15px;
+    }
+    .reason-icon {
+        font-size: 2em;
+    }
+    .reason-title {
+        font-size: 1.3em;
+    }
+    .reason-description {
+        font-size: 0.9em;
     }
 }
+
 
 
 /* Convince your company/boss */
@@ -1030,4 +1044,9 @@ form input:-webkit-autofill:focus {
     .card-text li {
         font-size: 0.8em;
     }
+}
+
+.text-decoration {
+    color: var(--text-decoration);
+    text-decoration: solid;
 }
