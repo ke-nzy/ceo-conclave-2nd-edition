@@ -83,10 +83,7 @@ i {
 }
 
 .container {
-    max-width: 1360px;
-    width: 90.4444444vw;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .site-button {
