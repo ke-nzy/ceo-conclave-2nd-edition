@@ -172,42 +172,18 @@ i {
     margin-bottom: 30px;
 }
 
-.info-content .info-row {
-    display: flex;
-    margin-bottom: 1rem;
-}
 
-.info-content .info-row img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.info-content .info-text {
-    padding: 1rem 0;
-}
 
 .info-content .info-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
     color: var(--headings);
 }
 
-.info-content .info-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: white;
-}
 
 .info-row h2 {
     color: var(--headings);
     font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
-.info-row p {
-    color: white;
-}
 
 .sidebar .nav-link:hover {
     background: #CFBC76;
