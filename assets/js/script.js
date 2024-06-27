@@ -9,7 +9,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM fully loaded and parsed');
-    var countDownDate = new Date("Aug 18, 2024 19:00:00").getTime();
+    var countDownDate = new Date("Aug 16, 2024 19:00:00").getTime();
 
     // Update the countdown every 1 second
     var x = setInterval(function () {
@@ -59,4 +59,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // navbar scrolling effect
+  window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
 

@@ -4,142 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>CEO CONCLAVE AND INVESTORS DINNER</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- NAVIGATION BAR CODE  -->
-    <nav class="navbar navbar-expand-lg navbar-white bg-white">
-        <div class="container">
-            <a class="navbar-brand py-0 me-5" href="https://asiaafrika.org/" target="_blank"><img
-                    src="assets/images/Logo/acc.jpeg" style="height: 30px;" alt="acc logo"><span class="fw-bold"
-                    style="color: #3b3b3b;"></span></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://asiaafrika.org/" target="_blank">
+                <img src="assets/images/Logo/acc.jpeg" height="30" alt="ACC Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <a class="navbar-brand py-0" href="https://asiaafrika.org/" target="_blank"><img
-                            src="assets/images/Logo/acc.jpeg" style="height: 30px;" alt="acc logo"><span class="fw-bold"
-                            style="color: #3b3b3b;"></span></a>
-                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav nav-underline justify-content-between flex-grow-1 ps-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="speakers.html">Speakers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registration.html">Registration</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sponsors.html">Sponsors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contactus.html" aria-current="page"> <button class="btn btn-dark"
-                                    type="submit">Contact Us</button></a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="speakers.html">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!-- <p>    Fill out the form below, and our team will get back to
-    you promptly.</p> -->
-    <main>
-        <div class="lh-lg ">
-            <img src="assets/images/Contact Us/scenarios.png" style="height: 15vh; width: 100%; object-fit :cover;"
-                alt="photo">
-            <div class="py-2" style="background-color: #161616;">
-                <h3 class="container text-white fw-bold">CONTACT US</h3>
+    
+    <main class="contact-page">
+        <section class="page-header">
+            <div class="page-header-bg"></div>
+            <div class="page-header-content">
+                <h1>Contact Us</h1>
             </div>
+        </section>
+    
+        <section class="contact-info">
             <div class="container">
-                <div class="my-3">
-                    <h4> Have questions or need more information?</h4>
-                    <p>
-                        By providing detailed information and clear instructions, we ensure that the registration
-                        process is user-friendly and accessible for all attendees, both local and international.
-                    </p>
-                    <div class="row row-cols-1 row-cols-md-3 g-5 my-5">
-                        <div class="col text-center">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <p>Address</p>
-                            <p>
-                                Mpaka House, Westlands Nairobi.
-                            </p>
-                            <hr class="text-success">
-                        </div>
-                        <div class="col text-center">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>Phone Number</p>
-                            <a href="tel:+254712885069" class="text-decoration-none">
-                                <p>
-                                    +254 712 885 069
-                                </p>
-                            </a>
-                            <hr class="text-success">
-                        </div>
-                        <div class="col text-center">
-                            <i class="bi bi-envelope-at-fill"></i>
-                            <p>Email Address</p>
-                            <a href="maito:info@asiaafrika.org" class="text-decoration-none">
-                                <p>
-                                    info@asiaafrika.org
-                                </p>
-                            </a>
-                            <hr class="text-success">
-                        </div>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <h2>Phone</h2>
+                        <p><a href="tel:+254712885069">+254-712-885-069</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope icon"></i>
+                        <h2>Email</h2>
+                        <p><a href="mailto:info@asiaafrika.org">info@asiaafrika.org</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <h2>Address</h2>
+                        <p>Mpaka Hse 2nd floor, Mpaka Rd, Nairobi, Kenya.</p>
                     </div>
                 </div>
-
-                <div class="py-5">
-                    <h4>Social Media Links:</h4>
-                    <p>
-                        Follow us on social media for the latest updates and networking opportunities.
-                    </p>
-                    <ul>
-                        <li><i class="bi bi-linkedin"></i> <a
-                                href="https://www.linkedin.com/company/saya-events-international/" target="_blank"
-                                class="text-decoration-none"> Linked In</a></li>
-                        <li> <i class="bi bi-facebook"></i><a
-                                href="https://www.facebook.com/people/Saya-Events-International" target="_blank"
-                                class="text-decoration-none"> Facebook</a></li>
-                        <li><i class="bi bi-twitter"></i><a href="https://x.com/sayaeventsint/" target="_blank"
-                                class="text-decoration-none"> Twitter</a></li>
-                        <li><i class="bi bi-instagram"></i><a
-                                href="https://www.instagram.com/saya_events_international/?g=5" target="_blank"
-                                class="text-decoration-none"> Instagram</a></li>
-                        <li><i class="bi bi-youtube"></i><a href="https://www.youtube.com/@SayaEventsInternational"
-                                target="_blank" class="text-decoration-none"> YouTube</a></li>
+            </div>
+        </section>
+    
+        <section class="form-map-container">
+            <div class="form-container">
+                <form>
+                    <h2>Get In Touch</h2>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.386327742426!2d36.78603477587285!3d-1.2645749344284853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173fe3de3041%3A0xbce96eb389f96bf8!2sMpaka%20House%2C%20Woodvale%20Grove%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1719489277301!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="global-footer">
+        <section class="container footer-wrapper">
+            <div class="footer-row">
+                <div class="conclave-info">
+                    <a href="https://asiaafrika.org/">
+                        <img class="footer-logo" src="assets/images/Logo/aacc-dark.png" alt="Asia Africa">
+                    </a>
+                    <p class="event-details"><time datetime="2024-08-16">August 16</time> • Villa Rosa Kempinski</p>
+                </div>
+                <div class="column-wrapper">
+                    <ul class="site-footer-links links">
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
+                    <a href="registration.html" class="site-button register" title="Click to go to the registration form">
+                        <span class="wrapper">Register now</span>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <iframe class="rounded"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8352017578873!2d36.80631901162634!3d-1.2719584987105856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1739fecabbff%3A0x3c71b10e5ded272e!2sVilla%20Rosa%20Kempinski!5e0!3m2!1sen!2ske!4v1718805467621!5m2!1sen!2ske"
-                height="300" style="border:0; width: 100%;" allowfullscreen="" loading=" lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </main>
-
-
+            <div class="footer-row">
+                <div class="aacc">
+                    <p class="copyright">© AACC, 2024</p>
+                    <div class="bottom-footer-links">
+                        <p><a href="#">Privacy policy</a></p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p class="hashtag">#CeoConclave2024</p>
+                    <div class="social-links links">
+                        <a href="https://x.com/sayaeventsint/" class="social-icon"><i class="fab fa-twitter"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <a href="https://www.instagram.com/saya_events_international/?e=5c034b58-4afc-499a-8f89-3e11c7d7225b&g=5" class="social-icon"><i class="fab fa-instagram"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <a href="https://www.facebook.com/people/Saya-Events-International" class="social-icon"><i class="fab fa-facebook-f"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-tiktok"></i><span class="sr-only">(Opens in a new tab)</span></a> -->
+                        <a href="https://www.youtube.com/@SayaEventsInternational" class="social-icon"><i class="fab fa-youtube"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <a href="https://ke.linkedin.com/company/saya-events-international" class="social-icon"><i class="fab fa-linkedin-in"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -147,6 +160,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
