@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://asiaafrika.org/" target="_blank">
-                <img src="assets/images/Logo/acc.jpeg" height="30" alt="ACC Logo">
+                <img src="assets/images/Logo/aacc-dark.png" height="30" alt="AACC Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +81,8 @@
                     <div class="contact-card">
                         <i class="fas fa-map-marker-alt icon"></i>
                         <h2>Address</h2>
-                        <p>Mpaka Hse 2nd floor, Mpaka Rd, Nairobi, Kenya.</p>
+                        <p>Mpaka Hse 2nd floor</p>
+                        <p>Mpaka Road, Nairobi, Kenya.</p>
                     </div>
                 </div>
             </div>
@@ -92,19 +93,27 @@
                 <form id="contactForm">
                     <h2>Get In Touch</h2>
                     <div class="form-group">
-                        <label for="name" class="form-label">Your name</label>
-                        <input type="text" id="name" class="form-control" name="Name" placeholder="Your Name" required>
+                      <label for="name" class="form-label">Your name</label>
+                      <input type="text" id="name" class="form-control" name="Name" placeholder="Your Name" required>
+                      <small class="text-danger" id="nameError" style="display: none;">Name is required</small>
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Your email</label>
-                        <input type="email" id="email" name="Email" class="form-control" placeholder="Your Email" required>
+                      <label for="email" class="form-label">Your email</label>
+                      <input type="email" id="email" name="Email" class="form-control" placeholder="Your Email" required>
+                      <small class="text-danger" id="emailError" style="display: none;">Valid Email is required</small>
                     </div>
                     <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-control" name="Message" rows="5" placeholder="Message"></textarea>
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" class="form-control" name="Message" rows="5" placeholder="Message"></textarea>
+                      <small class="text-danger" id="messageError" style="display: none;">Message is required</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                    <button type="submit" id="contactSubmitButton" class="btn btn-primary">
+                      <span id="contactButtonText">Send Message</span>
+                      <span id="contactSpinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                    </button>
+                  </form>
+                  <div id="contactNotification" style="display: none; margin-top: 20px;"></div>
+                  
             </div>
             <div class="google-maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.386327742426!2d36.78603477587285!3d-1.2645749344284853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173fe3de3041%3A0xbce96eb389f96bf8!2sMpaka%20House%2C%20Woodvale%20Grove%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1719489277301!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -151,6 +160,11 @@
                         <a href="https://ke.linkedin.com/company/saya-events-international" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i><span class="sr-only">(Opens in a new tab)</span></a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="bottom-footer-info">
+            <div class="text-center">
+              <p>Designed and made with <span class="heart-icon"><i class="fas fa-heart"></i></span> by SayaTech</p>
             </div>
         </section>
     </footer>

@@ -101,8 +101,8 @@ i {
 }
 
 .navbar.scrolled {
-    background-color: rgba(33, 36, 50, 0.9); 
-    backdrop-filter: blur(60px); 
+    background-color: rgba(33, 36, 50, 0.9);
+    backdrop-filter: blur(60px);
     opacity: 0.9;
 }
 
@@ -179,11 +179,13 @@ i {
         display: inline-block;
         margin: 0 10px;
     }
+
     .navbar-collapse {
         backdrop-filter: blur(60px);
     }
+
     .navbar-nav .nav-link::before {
-        width: 50%; 
+        width: 50%;
     }
 }
 
@@ -234,12 +236,13 @@ i {
     position: relative;
     z-index: 1;
     font-size: 0.9em;
-} 
+}
 
 @media (max-width: 768px) {
     .site-button {
         padding: 1em 1em;
     }
+
     .site-button span {
         font-size: 0.8em;
     }
@@ -271,7 +274,8 @@ i {
     padding: 0 20px;
     overflow: hidden;
     z-index: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0)); /* Gradient background */
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));
+    /* Gradient background */
 }
 
 .hero-background {
@@ -301,6 +305,7 @@ i {
     .hero {
         padding-top: 0px;
     }
+
     .hero h1 {
         font-size: 2.7em;
     }
@@ -338,7 +343,7 @@ i {
     object-fit: cover;
 }
 
-.aacc-logo img{
+.aacc-logo img {
     object-fit: fill;
 }
 
@@ -357,6 +362,7 @@ i {
         overflow: hidden;
     }
 }
+
 @media (max-width: 920px) {
     .info-image {
         width: 100%;
@@ -463,19 +469,19 @@ i {
 }
 
 .grow-card .reason-icon {
-    color: var(--icon-image-color); 
+    color: var(--icon-image-color);
 }
 
 .connect-card .reason-icon {
-    color: var(--icon-image-color); 
+    color: var(--icon-image-color);
 }
 
 .inspire-card .reason-icon {
-    color: var(--icon-image-color); 
+    color: var(--icon-image-color);
 }
 
 .enjoy-card .reason-icon {
-    color: var(--icon-image-color); 
+    color: var(--icon-image-color);
 }
 
 .reason-title {
@@ -493,6 +499,7 @@ i {
     .section-title {
         font-size: 2.5em;
     }
+
     .tablet-mobile-heading {
         margin-bottom: 4em;
     }
@@ -502,30 +509,38 @@ i {
     .section-title {
         font-size: 2em;
     }
+
     .desktop-heading {
         display: none;
     }
+
     .tablet-mobile-heading {
-        display: block; 
+        display: block;
         margin-bottom: 2em;
     }
+
     .download-link {
         text-align: center;
         margin-bottom: 2rem;
     }
+
     .download-link .h6 {
         font-size: 0.9em;
         display: block;
     }
+
     .reason-card {
         padding: 15px;
     }
+
     .reason-icon {
         font-size: 2em;
     }
+
     .reason-title {
         font-size: 1.3em;
     }
+
     .reason-description {
         font-size: 0.9em;
     }
@@ -564,6 +579,7 @@ i {
     .convince {
         display: block;
     }
+
     .convince-description {
         margin-bottom: 46px;
         font-size: 1.2em;
@@ -644,8 +660,8 @@ i {
     padding: var(--inner-padding);
     position: relative;
     z-index: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .background-filter {
@@ -706,18 +722,73 @@ form .form-control:focus {
 
 form input:-webkit-autofill {
     -webkit-text-fill-color: var(--dorky-form-text-color);
-    -webkit-box-shadow: 0 0 0px 1000px var(--body-theme) inset; 
-    transition: background-color 5000s ease-in-out 0s; 
+    -webkit-box-shadow: 0 0 0px 1000px var(--body-theme) inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 form input:-webkit-autofill:hover {
     -webkit-box-shadow: 0 0 0px 1000px var(--body-theme) inset;
-    color: var(--dorky-form-text-color); 
+    color: var(--dorky-form-text-color);
 }
 
 form input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px var(--body-theme) inset;
-    color: var(--dorky-form-text-color); 
+    color: var(--dorky-form-text-color);
+}
+
+/* Hide the default radio buttons */
+.form-check-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+}
+
+/* Creating custom radio buttons */
+.form-check-input+.form-check-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.form-check-input+.form-check-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--dweeb-writing);
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.form-check-input:checked + .form-check-label:before {
+    background-color: var(--headings); 
+    border-color: var(--headings); 
+  }
+  
+  .form-check-input + .form-check-label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--headings); 
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .form-check-input:checked + .form-check-label:after {
+    transform: scale(1);
+  }
+
+.form-check-label {
+    color: var(--dweeb-writing);
 }
 
 
@@ -751,7 +822,7 @@ form input:-webkit-autofill:focus {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 0 1rem; 
+    margin: 0 1rem;
     flex-wrap: wrap;
 }
 
@@ -821,9 +892,7 @@ form input:-webkit-autofill:focus {
     text-align: left;
 }
 
-.meet_our_sponsors_heading .row {
-
-}
+.meet_our_sponsors_heading .row {}
 
 .meet_our_sponsors_heading_underline {
     width: 150px;
@@ -907,7 +976,7 @@ form input:-webkit-autofill:focus {
 }
 
 .speakers-slider {
-    overflow: hidden; 
+    overflow: hidden;
     padding: 20px 0;
     position: relative;
 }
@@ -962,8 +1031,8 @@ form input:-webkit-autofill:focus {
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.2em; 
-    max-height: 2.4em; 
+    line-height: 1.2em;
+    max-height: 2.4em;
 }
 
 .speaker-overlay {
@@ -990,17 +1059,17 @@ form input:-webkit-autofill:focus {
 
 /* Swiper Pagination */
 .swiper-pagination {
-    bottom: 0px !important; 
+    bottom: 0px !important;
 }
 
 .swiper-pagination-bullet {
-    background: #cfbc76; 
+    background: #cfbc76;
     opacity: 0.6;
     transition: opacity 0.3s, background-color 0.3s;
 }
 
 .swiper-pagination-bullet-active {
-    background: #212432; 
+    background: #212432;
     opacity: 1;
 }
 
@@ -1010,7 +1079,7 @@ form input:-webkit-autofill:focus {
     color: var(--button-background);
     opacity: 1;
     transition: opacity 0.3s;
-    display: none; 
+    display: none;
 }
 
 .swiper-button-next:hover,
@@ -1041,6 +1110,7 @@ form input:-webkit-autofill:focus {
         flex-direction: column;
         margin-bottom: 3.5rem;
     }
+
     .content h1 {
         font-size: 3em;
     }
@@ -1050,20 +1120,23 @@ form input:-webkit-autofill:focus {
     .content {
         margin-bottom: 2em;
     }
+
     .content h1 {
         font-size: 40px;
     }
 }
 
 @media (min-width: 768px) {
+
     .swiper-button-next,
     .swiper-button-prev {
-        display: block; 
+        display: block;
     }
 
     .swiper-navigation-tracker {
-        display: block; 
+        display: block;
     }
+
     .content h1 {
         font-size: 40px;
     }
@@ -1090,9 +1163,11 @@ form input:-webkit-autofill:focus {
     .main-heading {
         font-size: 2em;
     }
+
     .sub-heading {
         font-size: 1em;
     }
+
     .speaker-container {
         flex: 0 0 90%;
     }
@@ -1104,6 +1179,7 @@ form input:-webkit-autofill:focus {
 .rate-card {
     /* background-color: var(--secondary-background-color); */
 }
+
 .rate-card .heading {
     text-align: center;
     margin-bottom: 40px;
@@ -1153,7 +1229,7 @@ form input:-webkit-autofill:focus {
     background-color: #212432;
     border-radius: 20px 20px 10px 10px;
     position: relative;
-    top: -20px; 
+    top: -20px;
     z-index: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #efdfba;
@@ -1187,12 +1263,12 @@ form input:-webkit-autofill:focus {
 
 .card-header.gold {
     background-color: var(--card-title);
-    font-weight: 400; 
+    font-weight: 400;
     color: #212432;
 }
 
 .card-header.silver {
-    background-color: #c0c0c0; 
+    background-color: #c0c0c0;
     font-weight: 400;
     color: #212432;
 }
@@ -1209,6 +1285,7 @@ form input:-webkit-autofill:focus {
     .main-heading {
         font-size: 2em;
     }
+
     .sub-heading {
         font-size: 1em;
     }
@@ -1217,9 +1294,11 @@ form input:-webkit-autofill:focus {
         margin-right: 20px;
         margin-left: 20px;
     }
+
     .card-header {
         font-size: 1.2em;
     }
+
     .card-text li {
         font-size: 0.9em;
     }
@@ -1229,16 +1308,20 @@ form input:-webkit-autofill:focus {
     .main-heading {
         font-size: 1.5em;
     }
+
     .sub-heading {
         font-size: 0.9em;
     }
+
     .card {
         margin-right: 15px;
         margin-left: 15px;
     }
+
     .card-header {
         font-size: 1em;
     }
+
     .card-text li {
         font-size: 0.8em;
     }
@@ -1425,7 +1508,7 @@ form input:-webkit-autofill:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -1480,12 +1563,12 @@ form input:-webkit-autofill:focus {
 @media (max-width: 768px) {
     .page-header h1 {
         font-size: 2rem;
-        text-align: center; 
+        text-align: center;
     }
 
     .overlay {
-        padding-left: 0; 
-        justify-content: center; 
+        padding-left: 0;
+        justify-content: center;
     }
 }
 
@@ -1500,7 +1583,7 @@ form input:-webkit-autofill:focus {
     align-items: center;
     justify-content: center;
     color: #fff;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .page-header-bg {
@@ -1513,7 +1596,7 @@ form input:-webkit-autofill:focus {
     top: 0;
     left: 0;
     z-index: -2;
-    filter: blur(8px); 
+    filter: blur(8px);
 }
 
 .page-header::before {
@@ -1523,8 +1606,8 @@ form input:-webkit-autofill:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33, 36, 50, 0.5); 
-    z-index: -1; 
+    background-color: rgba(33, 36, 50, 0.5);
+    z-index: -1;
 }
 
 .page-header-content {
@@ -1589,8 +1672,8 @@ form input:-webkit-autofill:focus {
 
 .form-map-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 20px auto;
 }
@@ -1674,10 +1757,12 @@ textarea.form-control {
     .page-header {
         height: 200px;
     }
+
     .contact-cards {
         flex-direction: column;
         align-items: center;
     }
+
     .contact-card {
         width: 80%;
         margin: 10px 0;
@@ -1692,6 +1777,29 @@ textarea.form-control {
 
 #submitButton:disabled {
     pointer-events: none;
-    opacity: 1; 
-    cursor: not-allowed; 
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+/* Footer section far bottom part start */
+.bottom-footer-info {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: var(--milky-text);
+    padding: 0 0;
+  }
+
+  .bottom-footer-info p {
+    display: inline-block; 
+    color: var(--milky-text);
+  }
+  
+  .bottom-footer-info .heart-icon {
+    color: red;
+  }
+  
+  .bottom-footer-info i {
+    margin: 0 3px 3px 3px;
   }

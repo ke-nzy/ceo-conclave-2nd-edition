@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://asiaafrika.org/" target="_blank">
-                <img src="assets/images/Logo/acc.jpeg" height="30" alt="ACC Logo">
+                <img src="assets/images/Logo/aacc-dark.png" height="30" alt="ACC Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,8 +104,8 @@
                 </div>
                 <div class="info-text col-md-6">
                     <h2 class="fw-bold">Mission and Purpose</h2>
-                    <p>The CEO Conclave and Investors Dinner aims to create a dynamic environment where top executives and investors can engage in meaningful dialogue, share visionary insights, and forge strategic partnerships. <br>
-                    Our mission is to accelerate business innovation, drive economic growth, and create lasting value by connecting industry leaders with investment opportunities.</p>
+                    <p>The CEO Conclave and Investors Dinner, organized by the <a href="http://asiaafrika.org/"><span class="text-decoration">Asia Africa Chamber of Commerce (AACC)</span></a>, aims to foster a dynamic platform that bridges the gap between Asian and African markets, creating unparalleled opportunities for collaboration, investment, and sustainable growth. <br>
+                    Our mission is to bring together visionary leaders, influential investors, and innovative entrepreneurs from Malaysia, the UK, Australia, Nigeria, Singapore, and beyond, including local investors, to forge meaningful partnerships and drive economic transformation across these regions.</p>
                 </div>
             </div>
         </div>
@@ -127,9 +127,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-
+    </section> 
     <!-- <hr> -->
 
     <!-- Why attend the event section -->
@@ -208,7 +206,7 @@
                 <!-- <h4>WHY THE CONCLAVE MATTERS</h4> -->
             </div>
             <div class="main-heading">
-                <h1>SPONSORSHIP PACKAGES</h1>
+                <h1>Select your Preferred Sponsorship PackageS</h1>
             </div>
             <div class="heading-underline"></div>
         </div>
@@ -386,38 +384,94 @@
                 <div class="heading-underline"></div>
             </div>
             <div class="description">
-                <p>Thank you for your interest. Please fill out the form below to receive a copy of the 2024
-                    Sponsorship
-                    Prospectus, and our team will be in touch!</p>
+                <p>Thank you for your interest. Please fill out the form below to receive a copy of the 2024 Sponsorship Prospectus, and our team will be in touch!</p>
             </div>
             <div style="position: relative;">
                 <form id="sponsorForm">
                     <div class="row">
-                        <div class="mb-3 col-md-6">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" name="First Name" placeholder="Enter your first name">
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label for="LastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="LastName" name="Last Name" placeholder="Enter your last name">
-                        </div>
+                      <div class="mb-3 col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="First Name" placeholder="Enter your first name">
+                        <small class="text-danger" id="firstNameError" style="display: none;">First Name is required</small>
+                      </div>
+                      <div class="mb-3 col-md-6">
+                        <label for="LastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="LastName" name="Last Name" placeholder="Enter your last name">
+                        <small class="text-danger" id="lastNameError" style="display: none;">Last Name is required</small>
+                      </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 col-md-6">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email">
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label for="phone" class="form-label">Phone</label>
-                            <input type="text" class="form-control" id="phone" name="Phone" placeholder="Enter your phone number">
-                        </div>
+                      <div class="mb-3 col-md-6">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email">
+                        <small class="text-danger" id="emailError" style="display: none;">Valid Email is required</small>
+                      </div>
+                      <div class="mb-3 col-md-6">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="phone" name="Phone Number" placeholder="Enter your phone number">
+                        <small class="text-danger" id="phoneError" style="display: none;">Phone Number is required</small>
+                      </div>
                     </div>
-                
-                    <div class="mb-3">
+                    <div class="row">
+                      <div class="mb-3 col-md-6">
+                        <label for="jobTitle" class="form-label">Job Title</label>
+                        <input type="text" class="form-control" id="jobTitle" name="Job Title" placeholder="Enter your Job title">
+                        <small class="text-danger" id="jobTitleError" style="display: none;">Job Title is required</small>
+                      </div>
+                      <div class="mb-3 col-md-6">
                         <label for="company" class="form-label">Company</label>
-                        <input type="text" class="form-control" id="company" name="Company" placeholder="Enter your company name">
+                        <input type="text" class="form-control" id="company" name="Organization/Company/Business name" placeholder="Enter your company name">
+                        <small class="text-danger" id="companyError" style="display: none;">Company Name is required</small>
+                      </div>
                     </div>
-                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                    <div class="mb-3">
+                      <label class="form-label">Select your Preferred Sponsorship Package</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Select your Preferred Sponsorship Package" id="platinum" value="USD 4000 / Ksh.500,000 - Platinum Partnership">
+                        <label class="form-check-label" for="platinum">
+                          USD 4000 / Ksh.500,000 - Platinum Partnership
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Select your Preferred Sponsorship Package" id="gold" value="USD 2500 / Ksh.300,000 - Gold Partnership">
+                        <label class="form-check-label" for="gold">
+                          USD 2500 / Ksh.300,000 - Gold Partnership
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Select your Preferred Sponsorship Package" id="silver" value="USD 1500 / Ksh.100,000 - Silver Partnership">
+                        <label class="form-check-label" for="silver">
+                          USD 1500 / Ksh.100,000 - Silver Partnership
+                        </label>
+                      </div>
+                      <small class="text-danger" id="packageError" style="display: none;">Please select a sponsorship package</small>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Preferred Method of Contact</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Additional Information Medium" id="contact-phone" value="Phone">
+                        <label class="form-check-label" for="contact-phone">
+                          Phone
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Additional Information Medium" id="contact-email" value="Email">
+                        <label class="form-check-label" for="contact-email">
+                          Email
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Additional Information Medium" id="contact-text" value="Text">
+                        <label class="form-check-label" for="contact-text">
+                          Text
+                        </label>
+                      </div>
+                      <small class="text-danger" id="contactMethodError" style="display: none;">Please select a contact method</small>
+                    </div>
+                    <button type="submit" id="submitButton" class="btn btn-primary">
+                      <span id="buttonText">Submit</span>
+                      <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                    </button>
                 </form>
                 <div id="notification" style="display: none; margin-top: 20px;"></div>
             </div>
@@ -646,6 +700,11 @@
                 </div>
             </div>
         </section>
+        <section class="bottom-footer-info">
+            <div class="text-center">
+              <p>Designed and made with <span class="heart-icon"><i class="fas fa-heart"></i></span> by SayaTech</p>
+            </div>
+        </section>          
     </footer>
     
 
