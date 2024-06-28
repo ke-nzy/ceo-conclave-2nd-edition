@@ -52,6 +52,7 @@ header nav .nav-link:hover {
 
 a {
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 hr {
@@ -60,6 +61,7 @@ hr {
 
 p {
     color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 
 h4 {
@@ -247,6 +249,8 @@ i {
     color: var(--button-text);
     background-color: var(--button-background);
     border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
@@ -1430,7 +1434,8 @@ form input:-webkit-autofill:focus {
 
 .page-header h1 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     margin: 0;
     text-align: left;
@@ -1484,9 +1489,8 @@ form input:-webkit-autofill:focus {
     }
 }
 
-/* Contact page start */
 .contact-page {
-    font-family: 'Arial', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .page-header {
@@ -1496,7 +1500,7 @@ form input:-webkit-autofill:focus {
     align-items: center;
     justify-content: center;
     color: #fff;
-    overflow: hidden; /* Ensure the pseudo-element stays within bounds */
+    overflow: hidden; 
 }
 
 .page-header-bg {
@@ -1563,11 +1567,13 @@ form input:-webkit-autofill:focus {
 .contact-card h2 {
     color: var(--headings);
     font-size: 1.5em;
+    font-family: "Ubuntu", sans-serif;
     margin-bottom: 10px;
 }
 
 .contact-card p {
     color: var(--headings);
+    font-family: "Montserrat", sans-serif;
 }
 
 .contact-card p a {
@@ -1604,6 +1610,7 @@ form input:-webkit-autofill:focus {
 .form-container h2 {
     text-align: center;
     font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 2.5em;
@@ -1612,6 +1619,10 @@ form input:-webkit-autofill:focus {
 
 .form-group {
     margin-bottom: 20px;
+}
+
+.form-group label {
+    font-family: "Montserrat", sans-serif;
 }
 
 .form-control {
@@ -1631,21 +1642,6 @@ form input:-webkit-autofill:focus {
 
 textarea.form-control {
     resize: vertical;
-}
-
-.btn-primary {
-    background-color: var(--button-background);
-    color: var(--button-text);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: var(--button-hover);
 }
 
 .google-maps {
@@ -1675,6 +1671,9 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+    .page-header {
+        height: 200px;
+    }
     .contact-cards {
         flex-direction: column;
         align-items: center;
@@ -1690,3 +1689,9 @@ textarea.form-control {
         width: 45%;
     }
 }
+
+#submitButton:disabled {
+    pointer-events: none; /* Makes the button non-interactive */
+    opacity: 1; /* Keeps the button looking the same */
+    cursor: not-allowed; /* Shows a read-only pointer */
+  }

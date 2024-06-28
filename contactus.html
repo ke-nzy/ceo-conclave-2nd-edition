@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -70,11 +69,13 @@
                     <div class="contact-card">
                         <i class="fas fa-phone-alt icon"></i>
                         <h2>Phone</h2>
-                        <p><a href="tel:+254712885069">+254-712-885-069</a></p>
+                        <p><a href="tel:+254723856530">+254-723-856-530</a></p>
+                        <p><a href="tel:+254743062513">+254-743-062-513</a></p>
                     </div>
                     <div class="contact-card">
                         <i class="fas fa-envelope icon"></i>
                         <h2>Email</h2>
+                        <p><a href="mailto:ceoconclave@asiaafrika.org">ceoconclave@asiaafrika.org</a></p>
                         <p><a href="mailto:info@asiaafrika.org">info@asiaafrika.org</a></p>
                     </div>
                     <div class="contact-card">
@@ -88,19 +89,19 @@
     
         <section class="form-map-container">
             <div class="form-container">
-                <form>
+                <form id="contactForm">
                     <h2>Get In Touch</h2>
                     <div class="form-group">
                         <label for="name" class="form-label">Your name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        <input type="text" id="name" class="form-control" name="Name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Your email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        <input type="email" id="email" name="Email" class="form-control" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-control" rows="5" placeholder="Message"></textarea>
+                        <textarea id="message" class="form-control" name="Message" rows="5" placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -162,6 +163,7 @@
         crossorigin="anonymous"></script>
 
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/contact.js"></script>
 </body>
 
 </html>

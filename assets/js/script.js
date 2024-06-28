@@ -71,3 +71,43 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Script for the sponsor google sheet form
+// const scriptURL = 'https://script.google.com/macros/s/AKfycby80YksGAHLvPYyQu7eNPycSvuuTmwEjqegCBVDrjMO-2bWCxN5BS6DkmPtxozey3ib3Q/exec';
+// const form = document.getElementById('sponsorForm');
+
+// form.addEventListener('submit', e => {
+//   e.preventDefault();
+//   fetch(scriptURL, {
+//     method: 'POST',
+//     mode: 'cors',
+//     headers: {
+//       'Content-Type': 'application/x-www-form-urlencoded'
+//     },
+//     body: new URLSearchParams(new FormData(form))
+//   })
+//   .then(response => response.json())
+//   .then(data => console.log('Success!', data))
+//   .catch(error => console.error('Error!', error.message));
+// });
+
+// Script for the contact google sheet form
+// const scriptURL = 'https://script.google.com/macros/s/AKfycby80YksGAHLvPYyQu7eNPycSvuuTmwEjqegCBVDrjMO-2bWCxN5BS6DkmPtxozey3ib3Q/exec';
+// const form = document.getElementById('contactForm');
+
+// form.addEventListener('submit', e => {
+//   e.preventDefault();
+//   fetch(scriptURL, {
+//     method: 'POST',
+//     mode: 'cors',
+//     headers: {
+//       'Content-Type': 'application/x-www-form-urlencoded'
+//     },
+//     body: new URLSearchParams(new FormData(form))
+//   })
+//   .then(response => response.json())
+//   .then(data => console.log('Success!', data))
+//   .catch(error => console.error('Error!', error.message));
+// });
+
+
+

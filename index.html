@@ -312,9 +312,9 @@
                         <div class="speaker-info">
                             <h2 class="speaker-name">Dr. Romel Santos</h2>
                             <p class="speaker-title">CEO Sam Digital technologies</p>
-                            <div class="speaker-overlay">
+                            <!-- <div class="speaker-overlay">
                                 <p>Australian-based Filipino entrepreneur, is crafting a narrative that transcends national boundaries, highlighting the global presence and influence of his company, SAM Digital Technologies.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="speaker-container swiper-slide">
@@ -352,9 +352,9 @@
                             <h2 class="speaker-name">Augusto Maquengo, PhD</h2>
                             <p class="speaker-title">Principal resource and budget coordinator - african development
                                 bank</p>
-                            <div class="speaker-overlay">
+                            <!-- <div class="speaker-overlay">
                                 <p>16 years proven professional and management skills handling development and macroeconomic issues, Information technology operations and two of those years on project management in Oil&Gas industries.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -369,8 +369,7 @@
     <!-- Convince your boss letter -->
     <section class="convince-container">
         <div class="convince">
-            <p class="convince-description">You're onboard for the conclave, what about your company? We've got your
-                back.</p>
+            <p class="convince-description">You're onboard for the conclave, what about your company?<br> We've got your back.</p>
             <a class="site-button" href="">
                 <span>Download Our "Convince your boss letter"</span>
             </a>
@@ -378,7 +377,7 @@
     </section>
 
     <!-- Event sponsor form registration -->
-    <!-- <section class="container mt-4 sponsor-form">
+    <section class="container mt-4 sponsor-form">
         <div class="narrow-container background-filter">
             <div class="heading mb-4">
                 <div class="sponsor-heading">
@@ -392,37 +391,38 @@
                     Prospectus, and our team will be in touch!</p>
             </div>
             <div style="position: relative;">
-                <form>
+                <form id="sponsorForm">
                     <div class="row">
                         <div class="mb-3 col-md-6">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                            <input type="text" class="form-control" id="firstName" name="First Name" placeholder="Enter your first name">
                         </div>
                         <div class="mb-3 col-md-6">
                             <label for="LastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="LastName" placeholder="Enter your last name">
+                            <input type="text" class="form-control" id="LastName" name="Last Name" placeholder="Enter your last name">
                         </div>
                     </div>
                     <div class="row">
                         <div class="mb-3 col-md-6">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email">
                         </div>
                         <div class="mb-3 col-md-6">
                             <label for="phone" class="form-label">Phone</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                            <input type="text" class="form-control" id="phone" name="Phone" placeholder="Enter your phone number">
                         </div>
                     </div>
-
+                
                     <div class="mb-3">
                         <label for="company" class="form-label">Company</label>
-                        <input type="text" class="form-control" id="company" placeholder="Enter your company name">
+                        <input type="text" class="form-control" id="company" name="Company" placeholder="Enter your company name">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
                 </form>
+                <div id="notification" style="display: none; margin-top: 20px;"></div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Event Countdown timer -->
     <section class="container my-5 countdown-timer">
@@ -657,6 +657,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/contact.js"></script> -->
+    <script src="assets/js/sponsor.js"></script>
 </body>
 
 </html>
