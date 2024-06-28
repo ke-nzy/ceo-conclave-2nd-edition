@@ -1691,7 +1691,7 @@ textarea.form-control {
 }
 
 #submitButton:disabled {
-    pointer-events: none; /* Makes the button non-interactive */
-    opacity: 1; /* Keeps the button looking the same */
-    cursor: not-allowed; /* Shows a read-only pointer */
+    pointer-events: none;
+    opacity: 1; 
+    cursor: not-allowed; 
   }
