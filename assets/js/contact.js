@@ -13,9 +13,9 @@ contactForm.addEventListener('submit', e => {
     return;
   }
 
-  contactSubmitButton.disabled = true; // Disable submit button
-  contactSpinner.style.display = 'inline-block'; // Show spinner
-  contactButtonText.style.display = 'none'; // Hide button text
+  contactSubmitButton.disabled = true; 
+  contactSpinner.style.display = 'inline-block'; 
+  contactButtonText.style.display = 'none'; 
 
   fetch(contactFormScriptURL, {
     method: 'POST',
@@ -29,7 +29,7 @@ contactForm.addEventListener('submit', e => {
   .then(data => {
     if (data.status === 'success') {
       showContactNotification('Success! Your message has been sent.', 'success');
-      contactForm.reset(); // Clear the form
+      contactForm.reset(); 
     } else {
       showContactNotification('Error! ' + data.message, 'error');
     }
@@ -39,9 +39,9 @@ contactForm.addEventListener('submit', e => {
   })
   .catch(error => {
     showContactNotification('Error! ' + error.message, 'error');
-    contactSubmitButton.disabled = false; // Re-enable submit button
-    contactSpinner.style.display = 'none'; // Hide spinner
-    contactButtonText.style.display = 'inline'; // Show button text
+    contactSubmitButton.disabled = false; 
+    contactSpinner.style.display = 'none'; 
+    contactButtonText.style.display = 'inline'; 
   });
 });
 
@@ -51,21 +51,18 @@ function validateContactForm() {
   // Clear previous error messages
   document.querySelectorAll('.text-danger').forEach(el => el.style.display = 'none');
 
-  // Validate name
   const name = document.getElementById('name');
   if (name.value.trim() === '') {
     document.getElementById('nameError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate email
   const email = document.getElementById('email');
   if (!validateEmail(email.value)) {
     document.getElementById('emailError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate message
   const message = document.getElementById('message');
   if (message.value.trim() === '') {
     document.getElementById('messageError').style.display = 'block';

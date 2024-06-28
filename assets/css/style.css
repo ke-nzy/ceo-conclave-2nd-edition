@@ -1779,6 +1779,14 @@ textarea.form-control {
     pointer-events: none;
     opacity: 1;
     cursor: not-allowed;
+    background-color: #CFBC76;
+}
+
+#contactSubmitButton:disabled {
+    pointer-events: none;
+    opacity: 1;
+    cursor: not-allowed;
+    background-color: #CFBC76;
 }
 
 /* Footer section far bottom part start */

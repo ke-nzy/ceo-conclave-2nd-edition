@@ -13,9 +13,9 @@ form.addEventListener('submit', e => {
     return;
   }
 
-  submitButton.disabled = true; // Disable submit button
-  spinner.style.display = 'inline-block'; // Show spinner
-  buttonText.style.display = 'none'; // Hide button text
+  submitButton.disabled = true; 
+  spinner.style.display = 'inline-block'; 
+  buttonText.style.display = 'none'; 
 
   fetch(scriptURL, {
     method: 'POST',
@@ -39,9 +39,9 @@ form.addEventListener('submit', e => {
   })
   .catch(error => {
     showNotification('Error! ' + error.message, 'error');
-    submitButton.disabled = false; // Re-enable submit button
-    spinner.style.display = 'none'; // Hide spinner
-    buttonText.style.display = 'inline'; // Show button text
+    submitButton.disabled = false; 
+    spinner.style.display = 'none'; 
+    buttonText.style.display = 'inline'; 
   });
 });
 
@@ -51,56 +51,48 @@ function validateForm() {
   // Clear previous error messages
   document.querySelectorAll('.text-danger').forEach(el => el.style.display = 'none');
 
-  // Validate first name
   const firstName = document.getElementById('firstName');
   if (firstName.value.trim() === '') {
     document.getElementById('firstNameError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate last name
   const lastName = document.getElementById('LastName');
   if (lastName.value.trim() === '') {
     document.getElementById('lastNameError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate email
   const email = document.getElementById('email');
   if (!validateEmail(email.value)) {
     document.getElementById('emailError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate phone
   const phone = document.getElementById('phone');
   if (phone.value.trim() === '') {
     document.getElementById('phoneError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate job title
   const jobTitle = document.getElementById('jobTitle');
   if (jobTitle.value.trim() === '') {
     document.getElementById('jobTitleError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate company
   const company = document.getElementById('company');
   if (company.value.trim() === '') {
     document.getElementById('companyError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate sponsorship package
   const packageSelected = document.querySelector('input[name="Select your Preferred Sponsorship Package"]:checked');
   if (!packageSelected) {
     document.getElementById('packageError').style.display = 'block';
     isValid = false;
   }
 
-  // Validate contact method
   const contactMethodSelected = document.querySelector('input[name="Additional Information Medium"]:checked');
   if (!contactMethodSelected) {
     document.getElementById('contactMethodError').style.display = 'block';
