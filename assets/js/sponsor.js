@@ -9,11 +9,11 @@ form.addEventListener('submit', e => {
 
   fetch(scriptURL, {
     method: 'POST',
-    mode: 'cors', // This is important for CORS
+    mode: 'cors', 
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    body: new URLSearchParams(new FormData(form)) // Using URLSearchParams for better compatibility
+    body: new URLSearchParams(new FormData(form)) 
   })
   .then(response => response.json())
   .then(data => {
