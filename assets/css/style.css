@@ -736,7 +736,6 @@ form input:-webkit-autofill:focus {
     color: var(--dorky-form-text-color);
 }
 
-/* Hide the default radio buttons */
 .form-check-input {
     position: absolute;
     opacity: 0;
@@ -744,52 +743,72 @@ form input:-webkit-autofill:focus {
     display: none;
 }
 
-/* Creating custom radio buttons */
-.form-check-input+.form-check-label {
+
+.form-check-input + .form-check-label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
     display: inline-block;
     line-height: 20px;
+    transition: color 0.3s;
 }
 
-.form-check-input+.form-check-label:before {
+.form-check-input + .form-check-label:before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--dweeb-writing);
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid var(--dweeb-writing); 
     border-radius: 50%;
     background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .form-check-input:checked + .form-check-label:before {
-    background-color: var(--headings); 
-    border-color: var(--headings); 
-  }
-  
-  .form-check-input + .form-check-label:after {
+    background-color: var(--dorky-form-text-color); 
+    border-color: var(--dorky-form-text-color); 
+}
+
+.form-check-input + .form-check-label:after {
     content: '';
     position: absolute;
-    left: 6px;
-    top: 6px;
-    width: 8px;
-    height: 8px;
+    left: 6px; 
+    top: 6px; 
+    width: 8px; 
+    height: 8px; 
     border-radius: 50%;
-    background-color: var(--headings); 
+    background-color: var(--dorky-form-text-color);
     transform: scale(0);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .form-check-input:checked + .form-check-label:after {
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-check-input:checked + .form-check-label:after {
     transform: scale(1);
-  }
+    animation: custom-radio-animation 0.3s ease-in-out forwards;
+}
+
+@keyframes custom-radio-animation {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 .form-check-label {
     color: var(--dweeb-writing);
 }
+
+.form-check-input:checked + .form-check-label {
+    color: var(--dorky-form-text-color); 
+}
+
 
 
 /* Countdown clock section */
@@ -1797,17 +1816,229 @@ textarea.form-control {
     font-size: 12px;
     color: var(--milky-text);
     padding: 0 0;
+}
+
+.bottom-footer-info p {
+    display: inline-block;
+    color: var(--milky-text);
+}
+
+.bottom-footer-info .heart-icon {
+    color: red;
+}
+
+.bottom-footer-info i {
+    margin: 0 3px 3px 3px;
+}
+
+/* Registration forms page start */
+.registration-forms-container {
+    padding-bottom: 40px;
+}
+
+.registration-section {
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  .tab-link.active {
+    background: var(--button-hover);
+    color: var(--button-text);
+  }
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
   }
 
-  .bottom-footer-info p {
-    display: inline-block; 
-    color: var(--milky-text);
+  form .form-label {
+    font-size: 1.2em;
+    font-weight: 300;
   }
   
-  .bottom-footer-info .heart-icon {
-    color: red;
+  #localForm {
+    opacity: 0.7;
   }
-  
-  .bottom-footer-info i {
-    margin: 0 3px 3px 3px;
+
+  #internationalForm {
+    opacity: 0.7;
   }
+
+.custom-select option {
+    background: var(--body-theme);
+    color: var(--headings);
+}
+
+@media (max-width: 1024px) {
+    #countyLocal option {
+        width: 50%;
+        font-size: 10px;
+    }
+}
+
+
+/* Custom square checkboxes */
+.custom-check-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 1.5em;
+    position: relative;
+}
+
+.custom-check-input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid var(--dweeb-writing);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-check-input:checked {
+    background-color: var(--dorky-form-text-color);
+    border-color: var(--dorky-form-text-color);
+}
+
+.custom-check-input::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    clip-path: polygon(14% 44%, 0% 65%, 50% 100%, 100% 22%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.custom-check-input:checked::after {
+    transform: scale(1);
+}
+
+.custom-check-label {
+    color: var(--dweeb-writing);
+    cursor: pointer;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.custom-check-input:checked + .custom-check-label {
+    color: var(--dorky-form-text-color); /* Customize label color when radio button is checked */
+}
+
+/* Make checkboxes and labels responsive */
+@media (max-width: 576px) {
+    .custom-check-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .custom-check-label {
+        font-size: 14px;
+    }
+}
+
+form .form-check {
+    margin-bottom: 10px;
+}
+
+form .form-label {
+    color: var(--headings);
+}
+
+@media (max-width: 768px) {
+    form .form-label {
+        font-size: 1em;
+    }
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    color: var(--button-text);
+    background-color: transparent;
+    border: #cfbc76 2px solid;
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    overflow: clip;
+    padding: 1.25em 1.71em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tab-link:hover {
+    background-color: var(--button-background);
+    color: var(--button-text);
+}
+
+.tab-link span {
+    position: relative;
+    z-index: 1;
+    font-size: 0.9em;
+}
+
+.tab-link.active {
+    background-color: var(--button-background);
+}
+
+.tab-content {
+    display: none; /* Initially hide */
+}
+.tab-content.active {
+    display: block; /* Show when any tab-pane is active */
+}
+
+.tab-pane {
+    display: none; /* Initially hide all tab panes */
+}
+.tab-pane.active {
+    display: block; /* Show active tab pane */
+}
+
+.form-heading {
+    max-width: 1200px;
+    padding: 40px 0;
+}
+
+.form-heading h1 {
+    color: var(--headings);
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+}
