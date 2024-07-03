@@ -1820,7 +1820,7 @@ textarea.form-control {
 
 .bottom-footer-info p {
     display: inline-block;
-    color: var(--milky-text);
+    color: var(--foolish-background);
 }
 
 .bottom-footer-info .heart-icon {
@@ -1951,7 +1951,7 @@ textarea.form-control {
 }
 
 .custom-check-input:checked + .custom-check-label {
-    color: var(--dorky-form-text-color); /* Customize label color when radio button is checked */
+    color: var(--dorky-form-text-color); 
 }
 
 /* Make checkboxes and labels responsive */
@@ -2017,17 +2017,17 @@ form .form-label {
 }
 
 .tab-content {
-    display: none; /* Initially hide */
+    display: none; 
 }
 .tab-content.active {
-    display: block; /* Show when any tab-pane is active */
+    display: block; 
 }
 
 .tab-pane {
-    display: none; /* Initially hide all tab panes */
+    display: none; 
 }
 .tab-pane.active {
-    display: block; /* Show active tab pane */
+    display: block; 
 }
 
 .form-heading {
@@ -2041,4 +2041,12 @@ form .form-label {
     font-family: "Ubuntu", sans-serif;
     text-align: center;
     font-size: 2.5em;
+}
+
+.additional-info {
+    padding: 2em 1em 0 2em ;
+}
+
+.additional-info .form-label {
+    font-weight: 700;
 }

@@ -44,7 +44,7 @@
                         <a class="nav-link" href="speakers.html">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registration.html">Registration</a>
+                        <a class="nav-link active" href="registration-forms.html">Registration</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sponsors.html">Sponsors</a>
@@ -53,7 +53,7 @@
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contactus.html">Contact Us</a>
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -77,6 +77,7 @@
                     </div>
                     <div class="tab-content">
                         <div id="localRegistrationForm" class="tab-pane">
+
                             <form id="localForm">
                                 <div class="form-heading">
                                     <h1>Local Delegates Form</h1>
@@ -101,7 +102,7 @@
                                     </div>
                                     <div class="mb-3 col-md-6">
                                         <label for="jobTitleLocal" class="form-label">Job Title</label>
-                                        <input type="text" class="form-control" id="jobTitleLocal" name="Job Title " placeholder="Enter your job title">
+                                        <input type="text" class="form-control" id="jobTitleLocal" name="Job Title" placeholder="Enter your job title">
                                         <small class="text-danger" id="jobTitleError" style="display: none;">Job Title is required</small>
                                     </div>
                                 </div>
@@ -125,36 +126,35 @@
                                 <div class="row">
 
                                     <div class="mb-3 col-md-6">
-                                        <label for="ticketTypeLocal" class="form-label">Ticket Type</label>
-                                        <div id="ticketTypeLocal">
-                                            <div class="custom-check-container">
-                                                <input class="custom-check-input" type="checkbox" value="Coming To Network & Learn - Kshs. 10,000 (1pax)" id="ticketType1" name="Select Ticket Type[]">
-                                                <label class="custom-check-label" for="ticketType1">Coming To Network & Learn - Kshs. 10,000 (1pax)</label>
-                                            </div>
-                                            <div class="custom-check-container">
-                                                <input class="custom-check-input" type="checkbox" value="Add 1 Extra Person - Kshs. 9,000" id="ticketType2" name="Select Ticket Type[]">
-                                                <label class="custom-check-label" for="ticketType2">Add 1 Extra Person - Kshs. 9,000</label>
-                                            </div>
-                                            <div class="custom-check-container">
-                                                <input class="custom-check-input" type="checkbox" value="Add 1 Rollup Banner - Kshs10,000 +KShs. 5,000 (1pax)" id="ticketType3" name="Select Ticket Type[]">
-                                                <label class="custom-check-label" for="ticketType3">Add 1 Rollup Banner - Kshs10,000 +KShs. 5,000 (1pax)</label>
-                                            </div>
-                                            <div class="custom-check-container">
-                                                <input class="custom-check-input" type="checkbox" value="1 pax + 1 min commercial video - Ksh. 35000" id="ticketType4" name="Select Ticket Type[]">
-                                                <label class="custom-check-label" for="ticketType4">1 pax + 1 min commercial video - Ksh. 35000</label>
-                                            </div>
-                                            <div class="custom-check-container">
-                                                <input class="custom-check-input" type="checkbox" value="Exhibition Table - KShs. 25,000" id="ticketType5" name="Select Ticket Type[]">
-                                                <label class="custom-check-label" for="ticketType5">Exhibition Table - KShs. 25,000</label>
-                                            </div>
-                                            <div class="custom-check-container">
-                                                <input class="custom-check-input" type="checkbox" value="I want to sponsor the event/Be a Speaker" id="ticketType6" name="Select Ticket Type[]">
-                                                <label class="custom-check-label" for="ticketType6">I want to sponsor the event/Be a Speaker</label>
-                                            </div>
-                                        </div>                                      
-                                        <small class="text-danger" id="ticketTypeError" style="display: none;">Please select at least one ticket type</small>
-                                    </div>
+                                        <label for="ticketTypeDropdown" class="form-label">Ticket Type</label>
+                                        <select class="form-control custom-select" id="ticketTypeDropdown" name="Select Ticket Type">
+                                            <option value="">-- Select Ticket Type --</option>
+                                            <option value="Coming To Network & Learn - Kshs. 10,000 (1pax)">Coming To Network & Learn - Kshs. 10,000 (1pax)</option>
+                                        </select>
+                                        <small class="text-danger" id="ticketTypeError" style="display: none;">Please select a ticket type</small>
 
+                                        <div class="mb-3 additional-info" id="extraItemsSection" style="display: none;">
+                                            <label class="form-label">Additional Options</label>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption2" name="Additional Options[]" value="Add 1 Rollup Banner - Ksh. 10,000 + KSh. 5,000 (1pax)">
+                                                <label class="custom-check-label" for="extraOption2">Add 1 Rollup Banner - Ksh. 10,000 + KSh. 5,000 (1pax)</label>
+                                            </div>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption3" name="Additional Options[]" value="1 pax + 1 min commercial video - Ksh. 35000">
+                                                <label class="custom-check-label" for="extraOption3">1 pax + 1 min commercial video - Ksh. 35,000</label>
+                                            </div>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption4" name="Additional Options[]" value="Exhibition Table - KSh. 25,000">
+                                                <label class="custom-check-label" for="extraOption4">Exhibition Table - KSh. 25,000</label>
+                                            </div>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption5" name="Additional Options[]" value="I want to sponsor the event/Be a Speaker">
+                                                <label class="custom-check-label" for="extraOption5">I want to sponsor the event/Be a Speaker</label>
+                                            </div>
+                                        </div>                                        
+                                        
+                                    </div>
+                                    
                                     <div class="mb-3 col-md-6">
                                         <label class="form-label">Payment methods</label>
                                         <div class="form-check mb-3">
@@ -248,135 +248,143 @@
                                     <span id="buttonTextLocal">Submit</span>
                                     <span id="spinnerLocal" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
                                 </button>
-                            </form>                            
+                            </form>         
+
                             <div id="notificationLocal" style="display: none; margin-top: 20px;"></div>
                         </div>
-
                         <div id="internationalRegistrationForm" class="tab-pane">
+
                             <form id="internationalForm">
                                 <div class="form-heading">
                                     <h1>International delegates Form</h1>
                                 </div>
                                 <div class="row">
                                     <div class="mb-3 col-md-6">
-                                        <label for="emailLocal" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="emailLocal" name="Email" placeholder="Enter your email" required>
+                                        <label for="emailInternational" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="emailInternational" name="Email" placeholder="Enter your email">
+                                        <small class="text-danger" id="emailInternationalError" style="display: none;">Valid Email is required</small>
                                     </div>
                                     <div class="mb-3 col-md-6">
-                                        <label for="fullNameLocal" class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" id="fullNameLocal" name="Full Name" placeholder="Enter your full name" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-3 col-md-6">
-                                        <label for="phoneLocal" class="form-label">Phone Number</label>
-                                        <input type="text" class="form-control" id="phoneLocal" name="Phone Number" placeholder="Enter your phone number" required>
-                                    </div>
-                                    <div class="mb-3 col-md-6">
-                                        <label for="jobTitleLocal" class="form-label">Job Title</label>
-                                        <input type="text" class="form-control" id="jobTitleLocal" name="Job Title" placeholder="Enter your job title">
+                                        <label for="fullNameInternational" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullNameInternational" name="Full Name" placeholder="Enter your full name">
+                                        <small class="text-danger" id="fullNameInternationalError" style="display: none;">Full Name is required</small>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="mb-3 col-md-6">
-                                        <label for="companyLocal" class="form-label">Company/Business Name</label>
-                                        <input type="text" class="form-control" id="companyLocal" name="Company/Business Name" placeholder="Enter your company name">
+                                        <label for="phoneInternational" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="phoneInternational" name="Phone Number" placeholder="Enter your phone number">
+                                        <small class="text-danger" id="phoneInternationalError" style="display: none;">Phone Number is required</small>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="jobTitleInternational" class="form-label">Job Title</label>
+                                        <input type="text" class="form-control" id="jobTitleInternational" name="Job Title" placeholder="Enter your job title">
+                                        <small class="text-danger" id="jobTitleInternationalError" style="display: none;">job Title is required</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="companyInternational" class="form-label">Company/Business Name</label>
+                                        <input type="text" class="form-control" id="companyInternational" name="Company/Business name" placeholder="Enter your company name">
+                                        <small class="text-danger" id="companyInternationalError" style="display: none;">Please provide your company name</small>
                                     </div>
                                     <div class="mb-3 col-md-6 col-12">
                                         <label for="countryLocal" class="form-label">Country</label>
-                                        <select class="form-control custom-select" id="countryLocal" name="County">
+                                        <select class="form-control custom-select" id="countryInternational" name="Country">
                                             <option value="">-- Select Country --</option>
                                             <option value="Uganda">Uganda</option>
                                             <option value="Poland">Poland</option>
                                         </select>
+                                        <small class="text-danger" id="countryInternationalError" style="display: none;">Please provide your country</small>
                                     </div>
                                 </div>        
                                 <div class="mt-4 row">
                                     <div class="mb-3 col-md-6">
-                                        <label class="form-label">Payment method</label>
-                                        <div class="form-check mb-3">
-                                            <input class="form-check-input" type="radio" name="Payment method" id="mpesaAccount" value="Invoice">
-                                            <label class="form-check-label" for="mpesaAccount">
-                                                Invoice
-                                            </label>
+                                        <label class="form-label" for="">Payment method</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Invoice" id="internationalInvoice" name="Select payment method">
+                                            <label class="form-check-label" for="internationalInvoice">Invoice</label>
                                         </div>
-                                        <small class="text-danger" id="packageError" style="display: none;">Please select a payment method</small>
-                                    </div>
+                                        <small class="text-danger" id="internationalPaymentMethodError" style="display: none;">Please select a payment method</small>
+                                    </div>                                    
                                     <div class="mb-3 col-md-6">
-                                        <label for="ticketTypeLocal" class="form-label">Select Package</label>
-                                        <div id="selectPackage">
+                                        <label for="selectPackageInternational" class="form-label">Select Package</label>
+                                        <div id="selectPackageInternational">
                                             <div class="custom-check-container">
-                                                <input class="custom-check-input" type="checkbox" value="3 Days All Inclusive (Accomodation, Transfers, B2B conference, Networking dinner, Safari tour) $2950" id="selectPackage1" name="Select Package[]">
-                                                <label class="custom-check-label" for="selectPackage1">3 Days All Inclusive (Accomodation, Transfers, B2B conference, Networking dinner, Safari tour) $2950</label>
+                                                <input class="custom-check-input" type="checkbox" value="3 Days All Inclusive (Accomodation, Transfers, B2B conference, Networking dinner, Safari tour) $2,950" id="selectPackage1" name="Select Package[]">
+                                                <label class="custom-check-label" for="selectPackage1">3 Days All Inclusive (Accomodation, Transfers, B2B conference, Networking dinner, Safari tour) $2,950</label>
                                             </div>
                                             <div class="custom-check-container">
                                                 <input class="custom-check-input" type="checkbox" value="I want to Be a Sponsor (Packages available upon request)" id="selectPackage2" name="Select Package[]">
                                                 <label class="custom-check-label" for="selectPackage2">I want to Be a Sponsor (Packages available upon request)</label>
                                             </div>
-                                        </div>                                      
+                                        </div>  
+                                        <small class="text-danger" id="internationalPackageError" style="display: none;">Please select a package</small>                                    
                                     </div>                        
                                 </div>
                                 <div class="row">
                                     <div class="mb-3 mt-2 col-md-6">
                                         <label class="form-label">Number of Attendees</label>
-                                        <!-- Redesigned radio buttons -->
                                          <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="1" id="InternationalAttendee" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="1 person" id="InternationalAttendee" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendee">1 person</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="2" id="InternationalAttendees2" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="2 people" id="InternationalAttendees2" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees2">2 people</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="3" id="InternationalAttendees3" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="3 people" id="InternationalAttendees3" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees3">3 people</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="4" id="InternationalAttendees4" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="4 people" id="InternationalAttendees4" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees4">4 people</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="5" id="InternationalAttendees5" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="5 people" id="InternationalAttendees5" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees5">5 people</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="6" id="InternationalAttendees6" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="6 people" id="InternationalAttendees6" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees6">6 people</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="7" id="InternationalAttendees7" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="7 people" id="InternationalAttendees7" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees7">7 people</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="8" id="InternationalAttendees8" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="8 people" id="InternationalAttendees8" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees8">8 people</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="9" id="InternationalAttendees9" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="9 people" id="InternationalAttendees9" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees9">9 people</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" value="10" id="InternationalAttendees10" name="Number Of Attendees">
+                                                    <input class="form-check-input" type="radio" value="10 people" id="InternationalAttendees10" name="Number Of Attendees">
                                                     <label class="form-check-label" for="InternationalAttendees10">10 people + (Special Package - Available upon request)</label>
                                                 </div>
                                             </div>
-                                         </div>                                        
+                                         </div> 
+                                         <small class="text-danger" id="internationalAttendeesError" style="display: none;">Please choose an attendee number</small>                                       
                                     </div>
                                     <div class="mb-3 col-md-6">
-                                        <label for="messageLocal" class="form-label">Any Special Request / Message</label>
-                                        <textarea id="messageLocal" class="form-control" name="Special Message" rows="5" placeholder="Enter your message"></textarea>
+                                        <label for="messageInternational" class="form-label">Any Special Request / Message</label>
+                                        <textarea id="messageInternational" class="form-control" name="Any Special request/message" rows="5" placeholder="Enter your message"></textarea>
                                     </div>
+                                    <small class="text-danger" id="internationalMessageError" style="display: none;">Message is required</small>
                                 </div>
                                 <button type="submit" id="submitButtonInternational" class="btn btn-primary">
                                     <span id="buttonTextInternational">Submit</span>
                                     <span id="spinnerInternational" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
                                 </button>
                             </form>
+                            
                             <div id="notificationInternational" style="display: none; margin-top: 20px;"></div>
                         </div>
                     </div>
@@ -440,7 +448,8 @@
         </section>
         <section class="bottom-footer-info">
             <div class="text-center">
-                <p>Designed and made with <span class="heart-icon"><i class="fas fa-heart"></i></span> by SayaTech</p>
+                <!-- <p>Designed and made with <span class="heart-icon"><i class="fas fa-heart"></i></span> by SayaTech</p> -->
+                <p>Kenzy</p>
             </div>
         </section>
     </footer>
@@ -453,7 +462,8 @@
         crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/registration-forms.js"></script>
+    <script src="assets/js/registration-local-forms.js"></script>
+    <script src="assets/js/resgistration-international-forms.js"></script>
     <script src="assets/js/tabs.js"></script>
 </body>
 
