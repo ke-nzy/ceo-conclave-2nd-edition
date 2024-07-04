@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     scroll-behavior: smooth;
     --body-theme: #212432;
@@ -995,7 +999,6 @@ form input:-webkit-autofill:focus {
 }
 
 .speakers-slider {
-    overflow: hidden;
     padding: 20px 0;
     position: relative;
 }
@@ -1006,7 +1009,7 @@ form input:-webkit-autofill:focus {
     border: 1px solid #CFBC76;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: opacity 0.5s ease;
     position: relative;
     cursor: pointer;
     margin-bottom: 10px;
@@ -1014,6 +1017,10 @@ form input:-webkit-autofill:focus {
 
 .speaker-container:hover {
     transform: scale(1.05);
+}
+
+.speaker-container.swiper-slide-active {
+    opacity: 1;
 }
 
 .speaker-image {
