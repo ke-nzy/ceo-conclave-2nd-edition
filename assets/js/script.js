@@ -74,6 +74,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Script for the loader gif
+window.addEventListener('load', function () {
+  const loader = document.getElementById('loader');
+  if (loader) {
+      loader.style.display = 'none';
+  }
+});
+
+
 // Navbar scrolling effect
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
