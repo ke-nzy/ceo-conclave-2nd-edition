@@ -1483,6 +1483,10 @@ form input:-webkit-autofill:focus {
         text-align: center;
     }
 
+    .footer-logo {
+        max-width: 80px;
+    }
+
     .column-wrapper,
     .aacc,
     .socials {
@@ -2049,4 +2053,19 @@ form .form-label {
 
 .additional-info .form-label {
     font-weight: 700;
+}
+
+.navbar-button {
+    margin-right: 8px;
+    display: block;
+}
+
+.navbar-button .site-button{
+    padding: 13px 20px;
+}
+
+@media (max-width: 991px) {
+    .navbar-button {
+        display: none;
+    }
 }

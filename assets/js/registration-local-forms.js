@@ -69,7 +69,7 @@ localForm.addEventListener('submit', e => {
         localButtonText.style.display = 'inline'; 
     })
     .catch(error => {
-        console.error('Error sending data:', error); 
+        // console.error('Error sending data:', error); 
         showLocalNotification('Network error! please try again.');
         localSubmitButton.disabled = false;
         localSpinner.style.display = 'none';
