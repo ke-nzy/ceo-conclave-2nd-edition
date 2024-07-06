@@ -2095,9 +2095,14 @@ form .form-label {
     font-weight: 700;
 }
 
+.navbar-brand {
+    width: 8.7em;
+}
+
 .navbar-button {
     margin-right: 8px;
     display: block;
+    width: 10.1em;
 }
 
 .navbar-button .site-button{
