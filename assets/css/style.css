@@ -2109,3 +2109,210 @@ form .form-label {
         display: none;
     }
 }
+
+
+/* Base styles */
+.about-wrapper {
+    /* margin: 10px; */
+}
+
+.about-container {
+    background-color: var(--body-theme);
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.section-container-shiet {
+    padding: 5rem 10px;
+}
+
+.perv {
+    margin: 0 auto;
+    max-width: 120rem;
+    position: relative;
+    z-index: 10;
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.container-aside {
+    flex: 1 1 32rem; 
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+}
+
+.info-heading-desktop {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4.8rem;
+    color: var(--dweeb-writing);
+    opacity: 1; 
+}
+
+.info-heading-mobile {
+    color: var(--dweeb-writing);
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Force line break for desktop */
+@media (min-width: 1025px) {
+    .info-heading {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+    .info-heading::after {
+        content: '';
+        display: block;
+        margin-top: 0.5rem;
+    }
+}
+
+.container-description {
+    height: 100%;
+    width: 100%;
+}
+
+.extra-description {
+    color: var(--dweeb-writing);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+.quoted-text-container {
+    padding: 40px;
+}
+
+.hdxd {
+    max-width: 76rem;
+}
+
+.quoted-text-container {
+    margin: 0 10px 0 100px;
+}
+
+.hdxd .quote-text {
+    text-align: left;
+    font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--dweeb-writing) 0%, #efdfba 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quote-author {
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.quote-author .quote-author-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--headings);
+    margin-bottom: 0.5rem;
+}
+
+.quote-author .quote-author-job {
+    font-family: "Kode Mono", monospace;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+}
+
+@media(min-width: 1025px) {
+    .info-heading-desktop {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .quoted-text-container {
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media (min-width: 961px) {
+    .container-aside {
+        width: 32rem;
+    }
+    .container-description {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: calc(100% - 32rem);
+    }
+    .quote-author {
+        justify-content: end;
+    }
+    .info-heading-desktop {
+        display: block;
+    }
+    .info-heading-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .quoted-text-container {
+        margin: 0 0 0 20px;
+    }
+    .quote-author {
+        justify-content: start;
+    }
+    .info-heading-desktop {
+        display: none;
+    }
+    .info-heading-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 660px) {
+    .container-description {
+        background-position: center 85rem;
+    }
+    .about-container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    .hdxd .quote-text {
+        font-size: 3.2em;
+    }
+    .quoted-text-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    .info-heading {
+        font-size: 2.4rem;
+        line-height: 1.1;
+        text-align: left;
+    }
+    .hdxd .quote-text {
+        line-height: 3rem;
+        font-size: 2.2em;
+    }
+}

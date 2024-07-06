@@ -4,247 +4,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>About Us</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Logo/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>CEO CONCLAVE AND INVESTORS DINNER</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <style>
-        p {
-            font-family: "Montserrat", sans-serif;
-            line-height: 2.5;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        h4 {
-            color: #efdfba;
-            font-family: "Ubuntu", sans-serif;
-        }
-        li, a{
-            transition:  width 0.3s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/video-playback.css">
 </head>
 
 <body>
+    <div id="loader">
+        <img src="assets/gifs/loader.gif" alt="Loading..." class="loader-image">
+    </div>
+        
     <!-- NAVIGATION BAR CODE  -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+    <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand py-0 me-5" href="https://asiaafrika.org/" target="_blank"><img
-                    src="assets/images/Logo/aacc-dark.png" style="height: 30px;" alt="acc logo"><span
-                    class="fw-bold"></span></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://asiaafrika.org/" target="_blank">
+                <img src="assets/images/Logo/aacc-dark.png" height="30" alt="ACC Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <a class="navbar-brand py-0" href="https://asiaafrika.org/" target="_blank"><img
-                            src="assets/images/Logo/aacc-dark.png" style="height: 30px;" alt="acc logo"><span
-                            class="fw-bold"></span></a>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav nav-underline justify-content-center flex-grow-1 ps-lg-5 gap-4">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="speakers.html">Speakers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registration.html">Registration</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sponsors.html">Sponsors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration-forms.html">Registration</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-button">
+                <a href="#sponsorFormSection" class="site-button sponsor">
+                    <span class="wrapper">Be a Sponsor</span>
+                </a>
             </div>
         </div>
     </nav>
 
-    <main style="background-color: #212432; color: #ffffff;">
-        <div>
-            <img src="assets/images/conference.jpg" style="height: 15vh; width: 100%; object-fit :cover;" alt="photo">
-            <div class="py-2" style="background-color: #00000080;">
-                <h3 class="container text-white fw-bold">ABOUT</h3>
-            </div>
-            <div class="container">
-                <div class="my-3">
-                    <h4 class="fw-bold">
-                        Brief description of the event, its purpose, and its significance.
-                    </h4>
-                    <p>
-                        The CEO Conclave and Investors Dinner, scheduled to take place on August 16th at the prestigious
-                        Villa
-                        Rosa Kempinski, is a high-profile event aimed at fostering dialogue and collaboration among top
-                        executives, investors, and key industry leaders. The purpose of the event is to create a
-                        platform
-                        for
-                        networking, knowledge sharing, and exploring investment opportunities. It is significant because
-                        it
-                        brings together influential decision-makers and stakeholders from various sectors, facilitating
-                        strategic partnerships and investments that can drive business growth and innovation. The
-                        event's
-                        setting at Villa Rosa Kempinski underscores its exclusivity and the premium networking
-                        opportunities
-                        it
-                        offers.
-                    </p>
-                </div>
-                <!-- <div class="my-5">
-                    <h4 class="fw-bold"> Mission Statement</h4>
-                    <p>
-                        The CEO Conclave and Investors Dinner aims to foster a dynamic environment where top executives
-                        and
-                        investors can engage in meaningful dialogue, share visionary insights, and forge strategic
-                        partnerships.
-                        Our mission is to accelerate business innovation, drive economic growth, and create lasting
-                        value by
-                        connecting industry leaders with investment opportunities.
-                        This event is dedicated to empowering decision-makers with the knowledge and networks they need
-                        to
-                        navigate and shape the future of their industries.
-                    </p>
-                </div>
-                <div class="my-5">
-                    <h4 class="fw-bold"> Organisers: Information about the organising committee or the organisation behind the event.
-                    </h4>
-                    <p>
-                        The CEO Conclave and Investors Dinner, scheduled for August 16th at Villa Rosa Kempinski, is
-                        organized by the Asia Africa Chamber of Commerce (AACC). The AACC is a distinguished
-                        organization
-                        dedicated to fostering economic cooperation and business development between Asia and Africa.
-                    </p>
-                </div> -->
-                <div class="my-5 py-4">
-                    <h4 class="fw-bold">About the Asia Africa Chamber of Commerce</h4>
+    <main class="about-wrapper">
 
-                    <div>
-                        <div class="card my-5">
-                            <div class="row g-0">
-                                <div class="col-md-6">
-                                    <img src="assets/images/nightcity.jpg" class="img-fluid rounded-start" alt="photo">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title"> <span class="fw-bold"><i class="bi bi-compass-fill"></i>
-                                                Mission:</span></h5>
-                                        <p class="card-text">
-                                            The
-                                            AACC aims to
-                                            enhance trade relations, investment
-                                            opportunities, and economic growth
-                                            between Asian and African countries. By providing a platform for businesses
-                                            to
-                                            connect and
-                                            collaborate, the chamber promotes mutual economic benefits and sustainable
-                                            development.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+        <section class="page-header">
+            <div class="page-header-bg"></div>
+            <div class="page-header-content">
+                <h1>About Us</h1>
+            </div>
+        </section>
+
+        <section class="about-container">
+            <div class="section-container-shiet">
+                <div class="perv info-row container-row">
+                    <div class="container-aside">
+                        <div class="info-title mission">
+                            <p class="info-heading-desktop">
+                                Our <br>Mission
+                            </p>
+                            <p class="info-heading-mobile">
+                                Our Mission
+                            </p>
                         </div>
-                        <div class="card my-5">
-                            <div class="row g-0">
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <span class="fw-bold"><i class="bi bi-calendar-check-fill"></i>
-                                                Activities:</span>
-                                        </h5>
-                                        <p class="card-text">
-                                            The AACC organizes various events,
-                                            conferences, and
-                                            trade
-                                            missions that facilitate
-                                            business networking, knowledge exchange, and partnership formation. They
-                                            work to
-                                            address
-                                            trade
-                                            barriers, advocate for favourable policies, and support businesses in
-                                            navigating
-                                            cross-continental
-                                            markets.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="assets/images/conference.jpg" class="img-fluid rounded-start" alt="photo">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card my-5">
-                            <div class="row g-0">
-                                <div class="col-md-6">
-                                    <img src="assets/images/gallery/untitled-114.jpg" class="img-fluid rounded-start" alt="photo">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <span class="fw-bold"><i class="bi bi-cloud-haze2-fill"></i> Impact:</span>
-                                        </h5>
-                                        <p class="card-text">
-                                            The AACC has
-                                            successfully
-                                            created
-                                            numerous opportunities for
-                                            businesses in both regions
-                                            strengthening of international trade ties.
-                                            The organizing committee for the CEO Conclave and Investors Dinner is
-                                            composed of
-                                            experienced
-                                            professionals from the AACC, committed to delivering a high-impact event
-                                            that aligns
-                                            with
-                                            their
-                                            mission of fostering economic collaboration between Asia and Africa.
-                                        </p>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="container-description">
+                        <p class="">The AACC aims to enhance trade relations, investment opportunities, and economic growth between Asian and African collaborate, the chamber promotes mutual economic benefits and sustainable development.</p>
+                        <div class="extra-description">
+                            <div>
+                                By fostering a collaborative environment, the AACC provides a platform for businesses, governments, and organizations to connect and explore new markets. Through various programs and initiatives, the chamber facilitates trade missions, business forums, and networking events, which help members gain valuable insights and forge strategic partnerships.
                             </div>
                         </div>
                     </div>
+                    
+                </div>
+            </div>
+        </section>
 
-                    <!-- <div class="py-4">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            
+        <section class="about-container">
+            <div class="quoted-text-container hdxd">
+                <p class="quote-text">
+                    “
+                    <span>This is a unique experience, show up and lets push our country to a higher economical level</span>
+                    ”
+                </p>
+                <div class="quote-author">
+                    <div>
+                        <h3 class="quote-author-name">Kennedy Ngugi .C</h3>
+                        <p class="quote-author-job">Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="about-container">
+            <div class="section-container-shiet">
+                <div class="perv info-row container-row">
+                    <div class="container-aside">
+                        <div class="info-title mission">
+                            <p class="info-heading-desktop">
+                                Our <br>Impact
+                            </p>
+                            <p class="info-heading-mobile">
+                                Our Impact
+                            </p>
                         </div>
+                    </div>
+                    <div class="container-description">
+                        <p class="">The AACC has successfully created numerous opportunities for businesses in both regions, strengthening international trade ties. The organizing committee for the CEO Conclave and Investors Dinner is composed of experienced professionals from the AACC, committed to delivering a high-impact event that aligns with their mission of fostering economic collaboration between Asia and Africa.</p>
+                        <div class="extra-description">
+                            <div>
+                                Over the years, the AACC has facilitated significant economic partnerships that have led to the creation of jobs, increased trade volumes, and enhanced cultural exchange between the two continents. Through initiatives such as trade fairs, business delegations, and investment forums, the AACC has enabled companies to expand their reach and access new markets.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="ceo-video-section">
+            <div class="video-container">
+                <div class="video-description">
+                    <h2 class="video-title">Message from Our President</h2>
+                    <p class="video-text">Join us as our CEO explains the vision and objectives of our upcoming event. Learn about the opportunities and benefits that await you.</p>
+                </div>
+                <div class="video-wrapper">
+                    <video id="ceoVideo" class="ceo-video" controls poster="assets/images/Thumbnail/CEO_thumbnail.png">
+                        <source src="assets/Videos/202407050955  compressed.mp4" type="video/mp4">
+                    </video>
+                    <!-- <div class="video-controls">
+                        <button id="playPauseBtn" class="play-pause-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <input id="progressBar" class="progress-bar" type="range" min="0" max="100" value="0">
                     </div> -->
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <iframe class="rounded"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8352017578873!2d36.80631901162634!3d-1.2719584987105856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1739fecabbff%3A0x3c71b10e5ded272e!2sVilla%20Rosa%20Kempinski!5e0!3m2!1sen!2ske!4v1718805467621!5m2!1sen!2ske"
-                height="300" style="border:0; width: 100%;" allowfullscreen="" loading=" lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </section>
+        
+        
+        
+        
+        
+        <footer class="global-footer">
+            <section class="container footer-wrapper">
+                <div class="footer-row">
+                    <div class="conclave-info">
+                        <a href="https://asiaafrika.org/">
+                            <img class="footer-logo" src="assets/images/Logo/aacc-dark.png" alt="Asia Africa">
+                        </a>
+                        <p class="event-details"><time datetime="2024-08-16">August 16</time> • Villa Rosa Kempinski</p>
+                    </div>
+                    <div class="column-wrapper">
+                        <ul class="site-footer-links links">
+                            <li><a href="#">Speakers</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Sponsors</a></li>
+                            <li><a href="/contactus.html">Contact Us</a></li>
+                        </ul>
+                        <a href="/registration-forms.html" class="site-button register" title="Click to go to the registration forms">
+                            <span class="wrapper">Register now</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-row">
+                    <div class="aacc">
+                        <p class="copyright">© AACC, 2024</p>
+                        <div class="bottom-footer-links">
+                            <p><a href="#">Privacy policy</a></p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <p class="hashtag">#CeoConclave2024</p>
+                        <div class="social-links links">
+                            <a href="https://x.com/_aacc___?t=5IT2nmRL6BoN-U_xeUiyWA&s=09" class="social-icon" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                            <a href="https://www.instagram.com/asiaafricachambercommerce?igsh=ZG00NTM1amlodWM=" class="social-icon" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                            <a href="https://www.facebook.com/people/Saya-Events-International" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                            <!-- <a href="#" class="social-icon"><i class="fab fa-tiktok"></i><span class="sr-only">(Opens in a new tab)</span></a> -->
+                            <a href="https://www.youtube.com/@SayaEventsInternational" class="social-icon" target="_blank"><i class="fab fa-youtube"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                            <a href="https://www.linkedin.com/company/asia-africa-chamber-of-commerce-eastern-africa/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-footer-info">
+                <div class="text-center">
+                  <!-- <p>Designed and made with <span class="heart-icon"><i class="fas fa-heart"></i></span> by SayaTech</p> -->
+                  <p>Kenzy</p>
+                </div>
+            </section>       
+        </footer>
     </main>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -252,6 +220,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/video-playback.js"></script>
 </body>
 
 </html>
