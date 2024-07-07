@@ -2154,6 +2154,10 @@ form .form-label {
     align-items: center;
 }
 
+.info-title  p {
+    color: var(--headings);
+}
+
 .info-heading-desktop {
     text-transform: uppercase;
     font-weight: 900;
@@ -2321,3 +2325,4 @@ form .form-label {
         font-size: 2.2em;
     }
 }
+
