@@ -1380,6 +1380,10 @@ form input:-webkit-autofill:focus {
     text-decoration: solid;
 }
 
+.text-decoration:hover {
+    color: var(--headings);
+}
+
 /* Footer section */
 .global-footer {
     background-color: var(--foolish-background);
