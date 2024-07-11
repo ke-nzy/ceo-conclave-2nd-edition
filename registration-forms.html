@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Registration">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ceoconclave.asiaafrika.org/index.html">
+    <meta property="og:image" content="https://www.ceoconclave.asiaafrika.org/assets/images/Purpose%20and%20mission/purpose.png">
+    <meta property="og:description" content="Join us on August 16th at the prestigious Villa Rosa Kempinski for the CEO Conclave and Investors Dinner. Engage in networking, knowledge sharing, and explore investment opportunities in an exclusive setting.">
+    <meta property="og:site_name" content="CEO conclave and investors dinner">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CEO Conclave and Investors Dinner">
+    <meta name="twitter:description" content="Join us on August 16th at the prestigious Villa Rosa Kempinski for the CEO Conclave and Investors Dinner. Engage in networking, knowledge sharing, and explore investment opportunities in an exclusive setting.">
+    <meta name="twitter:image" content="https://www.ceoconclave.asiaafrika.org/assets/images/Purpose%20and%20mission/purpose.png">
+
+    <title>Register</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Logo/aacc-dark.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <img src="assets/gifs/loader.gif" alt="Loading..." class="loader-image">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://asiaafrika.org/" target="_blank">
+                <img src="assets/images/Logo/aacc-dark.png" height="30" alt="ACC Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registration-forms.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-button">
+                <a href="index.html#sponsorFormSection" class="site-button sponsor">
+                    <span class="wrapper">Be a Sponsor</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="registration-forms-container">
+        <section class="page-header">
+            <div class="page-header-bg"></div>
+            <div class="page-header-content">
+                <h1>Event Registration</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-4">
+                <div class="narrow-container">
+                    <div class="tabs row">
+                        <button class="tab-link col-md-4" data-tab="localRegistrationForm"><span>Local Registration</span></button>
+                        <button class="tab-link col-md-4" data-tab="internationalRegistrationForm"><span>International Registration</span></button>
+                        <a href="https://forms.office.com/r/9uSgQ0saWi" target="_blank" class="tab-link col-md-4"><span>African Delegates Registration</span></a>
+                        <!-- <a href="https://forms.office.com/r/9uSgQ0saWi" target="_blank">
+                            <button class="tab-link col-md-4" data-tab=""><span>African Delegates Registration</span></button>
+                        </a> -->
+                    </div>
+                    <div class="tab-content">
+                        <div id="localRegistrationForm" class="tab-pane">
+
+                            <form id="localForm">
+                                <div class="form-heading">
+                                    <h1>Local Delegates Form</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="emailLocal" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="emailLocal" name="Email" placeholder="Enter your email">
+                                        <small class="text-danger" id="emailError" style="display: none;">Email is required</small>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="fullNameLocal" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullNameLocal" name="Full Name" placeholder="Enter your full name">
+                                        <small class="text-danger" id="fullNameError" style="display: none;">Full Name is required</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="phoneLocal" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="phoneLocal" name="Phone Number" placeholder="Enter your phone number">
+                                        <small class="text-danger" id="phoneError" style="display: none;">Phone Number is required</small>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="jobTitleLocal" class="form-label">Job Title</label>
+                                        <input type="text" class="form-control" id="jobTitleLocal" name="Job Title" placeholder="Enter your job title">
+                                        <small class="text-danger" id="jobTitleError" style="display: none;">Job Title is required</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="companyLocal" class="form-label">Company/Business Name</label>
+                                        <input type="text" class="form-control" id="companyLocal" name="Company/Business name" placeholder="Enter your company name">
+                                        <small class="text-danger" id="companyError" style="display: none;">Company/Business Name is required</small>
+                                    </div>
+                                    <div class="mb-3 col-md-6 col-12">
+                                        <label for="countyLocal" class="form-label">County</label>
+                                        <select class="form-control custom-select" id="countyLocal" name="County">
+                                            <option value="">-- Select County --</option>
+                                            <option value="Baringo">Baringo</option>
+                                            <option value="Bomet">Bomet</option>
+                                            <option value="Bungoma">Bungoma</option>
+                                            <option value="Busia">Busia</option>
+                                            <option value="Elgeyo-Marakwet">Elgeyo-Marakwet</option>
+                                            <option value="Embu">Embu</option>
+                                            <option value="Garissa">Garissa</option>
+                                            <option value="Homa Bay">Homa Bay</option>
+                                            <option value="Isiolo">Isiolo</option>
+                                            <option value="Kajiado">Kajiado</option>
+                                            <option value="Kakamega">Kakamega</option>
+                                            <option value="Kericho">Kericho</option>
+                                            <option value="Kiambu">Kiambu</option>
+                                            <option value="Kilifi">Kilifi</option>
+                                            <option value="Kirinyaga">Kirinyaga</option>
+                                            <option value="Kisii">Kisii</option>
+                                            <option value="Kisumu">Kisumu</option>
+                                            <option value="Kitui">Kitui</option>
+                                            <option value="Kwale">Kwale</option>
+                                            <option value="Laikipia">Laikipia</option>
+                                            <option value="Lamu">Lamu</option>
+                                            <option value="Machakos">Machakos</option>
+                                            <option value="Makueni">Makueni</option>
+                                            <option value="Mandera">Mandera</option>
+                                            <option value="Marsabit">Marsabit</option>
+                                            <option value="Meru">Meru</option>
+                                            <option value="Migori">Migori</option>
+                                            <option value="Mombasa">Mombasa</option>
+                                            <option value="Murang'a">Murang'a</option>
+                                            <option value="Nairobi">Nairobi</option>
+                                            <option value="Nakuru">Nakuru</option>
+                                            <option value="Nandi">Nandi</option>
+                                            <option value="Narok">Narok</option>
+                                            <option value="Nyamira">Nyamira</option>
+                                            <option value="Nyandarua">Nyandarua</option>
+                                            <option value="Nyeri">Nyeri</option>
+                                            <option value="Samburu">Samburu</option>
+                                            <option value="Siaya">Siaya</option>
+                                            <option value="Taita-Taveta">Taita-Taveta</option>
+                                            <option value="Tana River">Tana River</option>
+                                            <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+                                            <option value="Trans-Nzoia">Trans-Nzoia</option>
+                                            <option value="Turkana">Turkana</option>
+                                            <option value="Uasin Gishu">Uasin Gishu</option>
+                                            <option value="Vihiga">Vihiga</option>
+                                            <option value="Wajir">Wajir</option>
+                                            <option value="West Pokot">West Pokot</option>
+                                        </select>
+                                        <small class="text-danger" id="countyError" style="display: none;">County is required</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="mb-3 col-md-6">
+                                        <label for="ticketTypeDropdown" class="form-label">Ticket Type</label>
+                                        <select class="form-control custom-select" id="ticketTypeDropdown" name="Select Ticket Type">
+                                            <option value="">-- Select Ticket Type --</option>
+                                            <option value="Coming To Network & Learn - Kshs. 10,000 (1pax)">Coming To Network & Learn - Kshs. 10,000 (1pax)</option>
+                                        </select>
+                                        <small class="text-danger" id="ticketTypeError" style="display: none;">Please select a ticket type</small>
+
+                                        <div class="mb-3 additional-info" id="extraItemsSection" style="display: none;">
+                                            <label class="form-label">Additional Options</label>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption2" name="Additional Options[]" value="Add 1 Rollup Banner - Ksh. 10,000 + KSh. 5,000 (1pax)">
+                                                <label class="custom-check-label" for="extraOption2">Add 1 Rollup Banner - Ksh. 10,000 + KSh. 5,000 (1pax)</label>
+                                            </div>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption3" name="Additional Options[]" value="1 pax + 1 min commercial video - Ksh. 35000">
+                                                <label class="custom-check-label" for="extraOption3">1 pax + 1 min commercial video - Ksh. 35,000</label>
+                                            </div>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption4" name="Additional Options[]" value="Exhibition Table - KSh. 25,000">
+                                                <label class="custom-check-label" for="extraOption4">Exhibition Table - KSh. 25,000</label>
+                                            </div>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" id="extraOption5" name="Additional Options[]" value="I want to sponsor the event/Be a Speaker">
+                                                <label class="custom-check-label" for="extraOption5">I want to sponsor the event/Be a Speaker</label>
+                                            </div>
+                                        </div>                                        
+                                        
+                                    </div>
+                                    
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label">Payment methods</label>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="Select payment method" id="mpesaAccount" value="MPESA PAYBILL: 522533 ACCOUNT NUMBER: 7875143 BUSINESS NAME: ASIA AFRIKA CHAMBER OF COMMERCE">
+                                            <label class="form-check-label" for="mpesaAccount">MPESA PAYBILL: 522533 ACCOUNT NUMBER: 7875143 BUSINESS NAME: ASIA AFRIKA CHAMBER OF COMMERCE</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="Select payment method" id="bankAccount" value="Account Name: ASIA AFRIKA CHAMBER OF COMMERCE Bank name: KCB Account Number: 1314611852 SWIFT CODE: KCBLKENX017">
+                                            <label class="form-check-label" for="bankAccount">Account Name: ASIA AFRIKA CHAMBER OF COMMERCE Bank name: KCB Account Number: 1314611852 SWIFT CODE: KCBLKENX017</label>
+                                        </div>
+                                        <small class="text-danger" id="paymentMethodError" style="display: none;">Please select a payment method</small>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label">Number of Attendees</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="1 person" id="attendee" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendee">1 person</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="2 people" id="attendees2" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees2">2 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3 people" id="attendees3" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees3">3 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="4 people" id="attendees4" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees4">4 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="5 people" id="attendees5" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees5">5 people</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="6 people" id="attendees6" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees6">6 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="7 people" id="attendees7" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees7">7 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="8 people" id="attendees8" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees8">8 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="9 people" id="attendees9" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees9">9 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="10 people" id="attendees10" name="Number of attendees">
+                                                    <label class="form-check-label" for="attendees10">10 people + (Special Package - Available upon request)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <small class="text-danger" id="attendeesError" style="display: none;">Please select the number of attendees</small>
+                                    </div>
+
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label">How did you get to hear about the event?</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Social Media" id="knowEvent-1" name="How did you get to hear about the event?">
+                                            <label class="form-check-label" for="knowEvent-1">Social Media</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Email Invite" id="knowEvent-2" name="How did you get to hear about the event?">
+                                            <label class="form-check-label" for="knowEvent-2">Email Invite</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Referral" id="knowEvent-3" name="How did you get to hear about the event?">
+                                            <label class="form-check-label" for="knowEvent-3">Referral</label>
+                                        </div>
+                                        <small class="text-danger" id="knowEventError" style="display: none;">Please select an option</small>
+                                    </div>
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageLocal" class="form-label">Any Special Request / Message</label>
+                                    <textarea id="messageLocal" class="form-control" name="Any Special request/message" rows="5" placeholder="Enter your message"></textarea>
+                                    <small class="text-danger" id="messageError" style="display: none;">Message is required</small>
+                                </div>
+                                <button type="submit" id="submitButtonLocal" class="btn btn-primary">
+                                    <span id="buttonTextLocal">Submit</span>
+                                    <span id="spinnerLocal" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                                </button>
+                            </form>         
+
+                            <div id="notificationLocal" style="display: none; margin-top: 20px;"></div>
+                        </div>
+                        <div id="internationalRegistrationForm" class="tab-pane">
+
+                            <form id="internationalForm">
+                                <div class="form-heading">
+                                    <h1>International delegates Form</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="emailInternational" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="emailInternational" name="Email" placeholder="Enter your email">
+                                        <small class="text-danger" id="emailInternationalError" style="display: none;">Valid Email is required</small>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="fullNameInternational" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullNameInternational" name="Full Name" placeholder="Enter your full name">
+                                        <small class="text-danger" id="fullNameInternationalError" style="display: none;">Full Name is required</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="phoneInternational" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="phoneInternational" name="Phone Number" placeholder="Enter your phone number">
+                                        <small class="text-danger" id="phoneInternationalError" style="display: none;">Phone Number is required</small>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="jobTitleInternational" class="form-label">Job Title</label>
+                                        <input type="text" class="form-control" id="jobTitleInternational" name="Job Title" placeholder="Enter your job title">
+                                        <small class="text-danger" id="jobTitleInternationalError" style="display: none;">job Title is required</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="companyInternational" class="form-label">Company/Business Name</label>
+                                        <input type="text" class="form-control" id="companyInternational" name="Company/Business name" placeholder="Enter your company name">
+                                        <small class="text-danger" id="companyInternationalError" style="display: none;">Please provide your company name</small>
+                                    </div>
+                                    <div class="mb-3 col-md-6 col-12">
+                                        <label for="countryLocal" class="form-label">Country</label>
+                                        <select class="form-control custom-select" id="countryInternational" name="Country">
+                                            <option value="">-- Select Country --</option>
+                                            <option value="Argentina">Argentina</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Austria">Austria</option>
+                                            <option value="Belgium">Belgium</option>
+                                            <option value="Brazil">Brazil</option>
+                                            <option value="Burundi">Burundi</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Chile">Chile</option>
+                                            <option value="China">China</option>
+                                            <option value="Colombia">Colombia</option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="Djibouti">Djibouti</option>
+                                            <option value="Egypt">Egypt</option>
+                                            <option value="Eritrea">Eritrea</option>
+                                            <option value="Ethiopia">Ethiopia</option>
+                                            <option value="Finland">Finland</option>
+                                            <option value="France">France</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="India">India</option>
+                                            <option value="Indonesia">Indonesia</option>
+                                            <option value="Ireland">Ireland</option>
+                                            <option value="Israel">Israel</option>
+                                            <option value="Italy">Italy</option>
+                                            <option value="Ivory Coast">Ivory Coast</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Malaysia">Malaysia</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="Netherlands">Netherlands</option>
+                                            <option value="New Zealand">New Zealand</option>
+                                            <option value="Nigeria">Nigeria</option>
+                                            <option value="Norway">Norway</option>
+                                            <option value="Philippines">Philippines</option>
+                                            <option value="Russia">Russia</option>
+                                            <option value="Rwanda">Rwanda</option>
+                                            <option value="Saudi Arabia">Saudi Arabia</option>
+                                            <option value="Singapore">Singapore</option>
+                                            <option value="Somalia">Somalia</option>
+                                            <option value="South Africa">South Africa</option>
+                                            <option value="South Korea">South Korea</option>
+                                            <option value="South Sudan">South Sudan</option>
+                                            <option value="Spain">Spain</option>
+                                            <option value="Sweden">Sweden</option>
+                                            <option value="Switzerland">Switzerland</option>
+                                            <option value="Tanzania">Tanzania</option>
+                                            <option value="Thailand">Thailand</option>
+                                            <option value="Turkey">Turkey</option>
+                                            <option value="Uganda">Uganda</option>
+                                            <option value="United Arab Emirates">United Arab Emirates</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="United States">United States</option>
+                                            <option value="Vietnam">Vietnam</option>
+                                        </select>
+                                        <small class="text-danger" id="countryInternationalError" style="display: none;">Please provide your country</small>
+                                    </div>
+                                </div>        
+                                <div class="mt-4 row">
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" for="">Payment method</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Invoice" id="internationalInvoice" name="Select payment method">
+                                            <label class="form-check-label" for="internationalInvoice">Invoice</label>
+                                        </div>
+                                        <small class="text-danger" id="internationalPaymentMethodError" style="display: none;">Please select a payment method</small>
+                                    </div>                                    
+                                    <div class="mb-3 col-md-6">
+                                        <label for="selectPackageInternational" class="form-label">Select Package</label>
+                                        <div id="selectPackageInternational">
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" value="3 Days All Inclusive (Accomodation, Transfers, B2B conference, Networking dinner, Safari tour) $2,950" id="selectPackage1" name="Select Package[]">
+                                                <label class="custom-check-label" for="selectPackage1">3 Days All Inclusive (Accomodation, Transfers, B2B conference, Networking dinner, Safari tour) $2,960</label>
+                                            </div>
+                                            <div class="custom-check-container">
+                                                <input class="custom-check-input" type="checkbox" value="I want to Be a Sponsor (Packages available upon request)" id="selectPackage2" name="Select Package[]">
+                                                <label class="custom-check-label" for="selectPackage2">I want to Be a Sponsor (Packages available upon request)</label>
+                                            </div>
+                                        </div>  
+                                        <small class="text-danger" id="internationalPackageError" style="display: none;">Please select a package</small>                                    
+                                    </div>                        
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 mt-2 col-md-6">
+                                        <label class="form-label">Number of Attendees</label>
+                                         <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="1 person" id="InternationalAttendee" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendee">1 person</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="2 people" id="InternationalAttendees2" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees2">2 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3 people" id="InternationalAttendees3" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees3">3 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="4 people" id="InternationalAttendees4" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees4">4 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="5 people" id="InternationalAttendees5" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees5">5 people</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="6 people" id="InternationalAttendees6" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees6">6 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="7 people" id="InternationalAttendees7" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees7">7 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="8 people" id="InternationalAttendees8" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees8">8 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="9 people" id="InternationalAttendees9" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees9">9 people</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="10 people" id="InternationalAttendees10" name="Number Of Attendees">
+                                                    <label class="form-check-label" for="InternationalAttendees10">10 people + (Special Package - Available upon request)</label>
+                                                </div>
+                                            </div>
+                                         </div> 
+                                         <small class="text-danger" id="internationalAttendeesError" style="display: none;">Please choose an attendee number</small>                                       
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="messageInternational" class="form-label">Any Special Request / Message</label>
+                                        <textarea id="messageInternational" class="form-control" name="Any Special request/message" rows="5" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <small class="text-danger" id="internationalMessageError" style="display: none;">Message is required</small>
+                                </div>
+                                <button type="submit" id="submitButtonInternational" class="btn btn-primary">
+                                    <span id="buttonTextInternational">Submit</span>
+                                    <span id="spinnerInternational" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                                </button>
+                            </form>
+                            
+                            <div id="notificationInternational" style="display: none; margin-top: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="global-footer">
+        <section class="container footer-wrapper">
+            <div class="footer-row">
+                <div class="conclave-info">
+                    <a href="https://asiaafrika.org/">
+                        <img class="footer-logo" src="assets/images/Logo/aacc-dark.png" alt="Asia Africa">
+                    </a>
+                    <p class="event-details"><time datetime="2024-08-16">August 16</time> • Villa Rosa Kempinski</p>
+                </div>
+                <div class="column-wrapper">
+                    <ul class="site-footer-links links">
+                        <li><a href="index.html#speakersSection">Speakers</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/contactus.html">Contact Us</a></li>
+                    </ul>
+                    <a href="/registration-forms.html" class="site-button register" title="Click to go to the registration forms">
+                        <span class="wrapper">Register now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="aacc">
+                    <p class="copyright">© AACC, 2024</p>
+                    <div class="bottom-footer-links">
+                        <p><a href="#">Privacy policy</a></p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p class="hashtag">#CeoConclave2024</p>
+                    <div class="social-links links">
+                        <a href="https://x.com/_aacc___?t=5IT2nmRL6BoN-U_xeUiyWA&s=09" class="social-icon" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <a href="https://www.instagram.com/asiaafricachambercommerce?igsh=ZG00NTM1amlodWM=" class="social-icon" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <a href="https://www.facebook.com/asia.africa.chamber.commerce?mibextid=ZbWKwL" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-tiktok"></i><span class="sr-only">(Opens in a new tab)</span></a> -->
+                        <a href="https://www.youtube.com/@SayaEventsInternational" class="social-icon" target="_blank"><i class="fab fa-youtube"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                        <a href="https://www.linkedin.com/company/asia-africa-chamber-of-commerce-eastern-africa/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i><span class="sr-only">(Opens in a new tab)</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-footer-info">
+            <div class="text-center">
+              <!-- <p>Designed and made with <span class="heart-icon"><i class="fas fa-heart"></i></span> by SayaTech</p> -->
+              <p>Kenzy</p>
+            </div>
+        </section>       
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/registration-local-forms.js"></script>
+    <script src="assets/js/resgistration-international-forms.js"></script>
+    <script src="assets/js/tabs.js"></script>
+</body>
+
+</html>
