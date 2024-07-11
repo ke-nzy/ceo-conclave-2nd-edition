@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var secondsElement = document.getElementById("seconds");
     if (secondsElement) secondsElement.innerHTML = seconds;
 
-    // Display "EXPIRED" if countdown is finished
     if (distance < 0) {
       clearInterval(x);
       var timerElement = document.querySelector(".timer");
@@ -34,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, 1000);
 
-  // Speakers slider initialization (assuming Swiper is correctly loaded)
   var swiper = new Swiper(".speakers-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
