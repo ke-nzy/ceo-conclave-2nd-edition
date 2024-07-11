@@ -1884,7 +1884,7 @@ textarea.form-control {
   }
   
   .tab-link {
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
     background: var(--button-background);
     color: var(--button-text);
@@ -1943,7 +1943,7 @@ textarea.form-control {
     }
 
     .tab-link span {
-        font-size: 0.9em !important;
+        font-size: 0.5em;
     }
 }
 
@@ -2030,8 +2030,9 @@ form .form-label {
 
 .tabs {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .tab-link {
@@ -2043,10 +2044,11 @@ form .form-label {
     font-weight: 600;
     letter-spacing: 1.4px;
     overflow: clip;
-    padding: 1.25em 1.71em;
+    padding: 1.25em 10px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
+    margin: 10px 5px 0 5px;
 }
 
 .tab-link:hover {
@@ -2113,9 +2115,24 @@ form .form-label {
     padding: 13px 20px;
 }
 
+@media (max-width: 1024px) {
+    .tab-link span {
+        font-size: 0.7em;
+    }
+}
+
 @media (max-width: 991px) {
     .navbar-button {
         display: none;
+    }
+    .tab-link span {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 350px) {
+    .tab-link span {
+        font-size: 0.5em;
     }
 }
 
@@ -2330,3 +2347,7 @@ form .form-label {
     }
 }
 
+
+.tabs-flex {
+    display: flex;
+}
