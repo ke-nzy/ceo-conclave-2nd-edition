@@ -2106,6 +2106,10 @@ form .form-label {
     width: 8.7em;
 }
 
+.navbar-hidden-sponsor-button {
+    display: none;
+}
+
 .navbar-button {
     margin-right: 8px;
     display: block;
@@ -2122,7 +2126,13 @@ form .form-label {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.5px) {
+    .navbar-hidden-sponsor-button {
+        display: block;
+    }
+    .sponsor-button-mobile-view {
+        margin: 15px 0;
+    }
     .navbar-button {
         display: none;
     }
