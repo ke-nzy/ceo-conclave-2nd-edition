@@ -33,6 +33,11 @@ html {
     --milky-text: #b6c7d6;
 }
 
+::selection {
+    background: var(--headings);
+    color: var(--text-writing);
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--body-theme);
