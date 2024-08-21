@@ -1506,13 +1506,13 @@ form input:-webkit-autofill:focus {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.social-icon a {
+.social-icon i {
     color: #fff;
     text-decoration: none;
 }
 
 .social-icon:hover {
-    background-color: var(--text-decoration);
+    background-color: var(--creamy-inn-text-color);
     color: #fff;
 }
 
