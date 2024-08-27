@@ -1511,7 +1511,7 @@ form input:-webkit-autofill:focus {
     text-decoration: none;
 }
 
-.social-icon:hover {
+.social-icon i:hover {
     background-color: var(--creamy-inn-text-color);
     color: #fff;
 }
