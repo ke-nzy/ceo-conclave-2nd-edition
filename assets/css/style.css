@@ -420,7 +420,7 @@ i {
 /* Why Attend Section */
 .why-attend-section {
     background-color: #00000057;
-    padding: 50px 40px;
+    padding: 50px 80px;
     /* border-radius: 10px; */
     color: var(--dweeb-writing);
 }
@@ -524,6 +524,12 @@ i {
 .reason-description {
     font-size: 1em;
     color: var(--dweeb-writing);
+}
+
+@media (min-width: 1024px) {
+    .why-attend-section {
+        padding: 50px 80px;
+    }
 }
 
 @media (max-width: 1024px) {
