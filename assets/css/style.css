@@ -1014,7 +1014,7 @@ form input:-webkit-autofill:focus {
 
 .content h1 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 6em;
+    font-size: 5em;
     font-style: normal;
     font-weight: 900;
     letter-spacing: 7.2px;
@@ -1195,10 +1195,6 @@ form input:-webkit-autofill:focus {
 
     .swiper-navigation-tracker {
         display: block;
-    }
-
-    .content h1 {
-        font-size: 40px;
     }
 }
 
