@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM fully loaded and parsed");
-
   // Countdown timer
   var countDownDate = new Date("Nov 15, 2024 19:00:00").getTime();
+
+  // Initially, all time elements should have the loading class
+  var timeElements = document.querySelectorAll(".time");
+  timeElements.forEach(function (element) {
+    element.classList.add("loading");
+  });
+
   var x = setInterval(function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -13,18 +18,28 @@ document.addEventListener("DOMContentLoaded", function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Update countdown timer elements if they exist
-    var daysElement = document.getElementById("days");
-    if (daysElement) daysElement.innerHTML = days;
+    // Elements that need to be updated
+    var elements = [
+      { id: "days", value: days },
+      { id: "hours", value: hours },
+      { id: "minutes", value: minutes },
+      { id: "seconds", value: seconds },
+      { id: "bubble-days", value: days },
+      { id: "bubble-hours", value: hours },
+      { id: "bubble-minutes", value: minutes },
+      { id: "bubble-seconds", value: seconds },
+    ];
 
-    var hoursElement = document.getElementById("hours");
-    if (hoursElement) hoursElement.innerHTML = hours;
-
-    var minutesElement = document.getElementById("minutes");
-    if (minutesElement) minutesElement.innerHTML = minutes;
-
-    var secondsElement = document.getElementById("seconds");
-    if (secondsElement) secondsElement.innerHTML = seconds;
+    elements.forEach(function (element) {
+      var el = document.getElementById(element.id);
+      if (el) {
+        // Set the value but keep the loading class for a brief moment
+        setTimeout(function () {
+          el.innerHTML = element.value;
+          el.classList.remove("loading");
+        }, 500); 
+      }
+    });
 
     if (distance < 0) {
       clearInterval(x);
@@ -73,13 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Script for the loader gif
-window.addEventListener('load', function () {
-  const loader = document.getElementById('loader');
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
   if (loader) {
-      loader.style.display = 'none';
+    loader.style.display = "none";
   }
 });
-
 
 // Navbar scrolling effect
 window.addEventListener("scroll", function () {
@@ -93,13 +107,26 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Disable right-click context menu
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-});
+// Countdown bubble
+window.addEventListener("scroll", function () {
+  const heroSection = document.querySelector(".hero");
+  const countdownBubble = document.querySelector(".countdown-bubble");
+  const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
 
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'U')) {
-      e.preventDefault();
+  if (window.scrollY > heroBottom) {
+    countdownBubble.classList.add("show");
+  } else {
+    countdownBubble.classList.remove("show");
   }
 });
+
+// Disable right-click context menu
+// document.addEventListener('contextmenu', function(e) {
+//   e.preventDefault();
+// });
+
+// document.addEventListener('keydown', function(e) {
+//   if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'U')) {
+//       e.preventDefault();
+//   }
+// });

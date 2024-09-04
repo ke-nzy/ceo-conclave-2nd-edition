@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/countdown-bubble.css">
 </head>
 
 <body>
@@ -90,11 +91,62 @@
         <div class="hero-background"></div>
         <div>
             <h1 class="fw-bold">Welcome to CEO Conclave & Investors Dinner</h1>
-            <p class="py-4">Join us at the most prestigious gathering of industry leaders and investors.</p>
-            <a href="/registration-forms/" class="btn btn-warning rounded-5"><span class="fw-bold px-4 py-3">Register
-                    Now</span></a>
+            <p class="py-4 hero-subtitle">Join us at the most prestigious gathering of industry leaders and investors.</p>
+            <a href="/registration-forms/" class="site-button rounded-5">
+                <span class="fw-bold px-4 py-3">Register Now</span>
+            </a>
+        </div>
+        <!-- Countdown Timer Section -->
+        <div class="container-fluid countdown-timer">
+            <div class="container">
+                <div class="heading">
+                    <div class="timer-heading mb-4">
+                        <h1>DAYS TO THE EVENT</h1>
+                    </div>
+                    <!-- <div class="heading-underline"></div> -->
+                </div>
+                <div class="timer">
+                    <div class="time-wrapper">
+                        <div class="time" id="days"></div>
+                        <div class="label">Days</div>
+                    </div>
+                    <div class="time-wrapper">
+                        <div class="time" id="hours"></div>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div class="time-wrapper">
+                        <div class="time" id="minutes"></div>
+                        <div class="label">Minutes</div>
+                    </div>
+                    <div class="time-wrapper">
+                        <div class="time" id="seconds"></div>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Countdown bubble -->
+    <div class="countdown-bubble">
+        <div class="time-wrapper">
+            <div class="time" id="bubble-days"></div>
+            <div class="label">Days</div>
+        </div>
+        <div class="time-wrapper">
+            <div class="time" id="bubble-hours"></div>
+            <div class="label">Hours</div>
+        </div>
+        <div class="time-wrapper">
+            <div class="time" id="bubble-minutes"></div>
+            <div class="label">Minutes</div>
+        </div>
+        <div class="time-wrapper">
+            <div class="time" id="bubble-seconds"></div>
+            <div class="label">Seconds</div>
+        </div>
+    </div>
+
 
     <section class="container lh-lg">
         <div class="info-content">
@@ -318,7 +370,7 @@
     </section>
 
     <!-- Event Countdown timer -->
-    <section class="container-fluid countdown-timer">
+    <!-- <section class="container-fluid countdown-timer">
         <div class="container">
             <div class="heading">
                 <div class="timer-heading mb-4">
@@ -345,7 +397,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Speakers at the event section -->
     <section class="container mt-4 speakers-section" id="speakersSection">
@@ -494,7 +546,8 @@
                 <div class="heading-underline"></div>
             </div>
             <div class="description">
-                <p>Thank you for your interest! Click the button below to access our 2024 Sponsorship Prospectus, and our team will reach out to you shortly.</p>
+                <p>Thank you for your interest! Click the button below to access our 2024 Sponsorship Prospectus, and
+                    our team will reach out to you shortly.</p>
             </div>
             <div style="position: relative;">
                 <div style="display: flex; justify-content: center">
