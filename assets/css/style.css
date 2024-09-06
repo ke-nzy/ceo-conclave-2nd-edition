@@ -294,7 +294,7 @@ i {
 /* Hero section */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 100vh; /* Full-screen height on larger devices */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,6 +328,7 @@ i {
   background: transparent;
   color: #efdfba;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
 }
 
 .timer-heading h1 {
@@ -401,6 +402,9 @@ i {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    height: 97vh;
+  }
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -430,6 +434,10 @@ i {
 
   .hero .hero-subtitle {
     font-size: 1rem;
+  }
+
+  .countdown-timer .container .timer {
+    gap: 0.7em;
   }
 
   .timer-heading h1 {
