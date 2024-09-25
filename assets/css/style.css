@@ -571,6 +571,8 @@ i {
   font-weight: 600;
   letter-spacing: 1.4px;
   display: block;
+  border: #cfbc76 2px solid;
+  padding: 10px;
 }
 
 .download-link:hover {
@@ -2513,4 +2515,9 @@ form .form-label {
   .time:not(.loading) {
     color: #fff; 
     background: rgba(255, 255, 255, 0.2);
+  }
+
+
+  .sponsor-container {
+    padding: 80px 0 40px 0;
   }
